@@ -26,8 +26,9 @@ void buscarMaiorValor(int V[], int N, int R[]){
 }
 
 void main(){ 
-    int VET[5];
     int N = 5;
+    int RES[2];
+    int VET[N];
 
     popularVetor(VET, N);
 
