@@ -2,9 +2,7 @@
 
 void CadastrarVetor(int V[], int N)
 {
-    int i;
-
-    for (i = 0; i < N; i++)
+    for (int i = 0; i < N; i++)
     {
         printf("Digite o valor da posicao %d: ", i);
         scanf("%d", &V[i]);
@@ -13,9 +11,7 @@ void CadastrarVetor(int V[], int N)
 
 void MostrarVetor(int V[], int N)
 {
-    int i;
-
-    for (i = 0; i < N; i++)
+    for (int i = 0; i < N; i++)
     {
         printf("Posicao %d: %d\n", i, V[i]);
     }
@@ -23,10 +19,9 @@ void MostrarVetor(int V[], int N)
 
 int AlterarVetor(int V[], int N, int procurado, int novo)
 {
-    int i;
     int alteracoes = 0;
 
-    for (i = 0; i < N; i++)
+    for (int i = 0; i < N; i++)
     {
         if (V[i] == procurado)
         {
