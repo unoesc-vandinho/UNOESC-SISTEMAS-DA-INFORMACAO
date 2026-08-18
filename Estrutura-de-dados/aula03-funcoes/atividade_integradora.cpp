@@ -11,10 +11,12 @@ void CadastrarVetor(int V[], int N)
 
 void MostrarVetor(int V[], int N)
 {
+    printf("Vetor [");
     for (int i = 0; i < N; i++)
     {
-        printf("Posicao %d: %d\n", i, V[i]);
+        printf(", %d", V[i]);
     }
+    printf("]")
 }
 
 int AlterarVetor(int V[], int N, int procurado, int novo)
