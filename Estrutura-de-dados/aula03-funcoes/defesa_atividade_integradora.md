@@ -1,23 +1,23 @@
 01 Defesa oral: explicar por que o vetor não precisa de return e por que a quantidade de alterações precisa.  
 
 > Os vetores são passados por referência, desta forma a edição do vetor
-> ocorre em um escopo superior, não é criado uma copia para edição. já a
-> quantidade de alterações é definida dentrro do scopo da propria função
-> sendo nescessário o retorno para exportar o valor para um scopo
+> ocorre em um escopo superior, não sendo criado uma copia para edição. já a
+> quantidade de alterações é definida dentro do scopo da propria função
+> sendo nescessário o retorno para exportar o valor para um escopo
 > superior.
 
 
 Aos que forem sorteados não precisam entregar uma imagem com a explicação realizada numa folha a mão. 
 ![UML atividade integradora](./UML-atividade_integradora.jpg)
 ---
-A função **Main** instaincia as váriaveis:
+A função **Main** instaincia as variáveis:
  - **V** - vetor principal *(tipo int)*
  - **N** - tamanho do vetor *(tipo int)*
  - **procurado** - valor a ser procurado *(tipo int)*
  - **novo** - valor a ser salvo atualizando o vetor *(tipo int)*
- - **alteracoes** - quantidade de indices alterados *(tipo int)*
+ - **alteracoes** - quantidade de posições alteradas *(tipo int)*
 
-e também instância executa as funções:
+e também executa as funções:
  - **CadastrarVetor(V, N)** - Cadastra os valores no vetor (popula o vetor)
  - **MostrarVetor(V, N)** - Imprime todos os valores do vetor
  - **AlterarValor(V, N, procurado, novo)** - Procura o valor no vetor, atualizar o valor encontrado, e retorna quantas edições foram feitas
@@ -28,7 +28,7 @@ A função **MonstrarVetor(V, N)** realiza uma operação de **FOR/LOOP** iteran
  - **N** - referência do tamanho do vetor *(tipo int)*
 
 ---
-A funções **CadastrarVetor(V, N)** realiza uma operação de **FOR / LOOP)** iterando cada uma das posições do vetor, onde irá solicitar o valor a ser salvo inicialmente. Seus parâmetros são:
+A função **CadastrarVetor(V, N)** realiza uma operação de **FOR / LOOP)** iterando cada uma das posições do vetor, onde irá solicitar o valor a ser salvo inicialmente. Seus parâmetros são:
  - **V** - referência do vetor para editar *(tipo int)*
  - **N** - referência do tamanho do vetor *(tipo int)*
 
@@ -40,7 +40,7 @@ A função **AlterarVetor(V, N, procurado, novo)** realiza uma operação de **F
  - **novo** - valor a ser salvo atualizando o vetor *(tipo int)*
  
 A função **AlterarVetor(V, N, procurado, novo)**  retorna:
-  - **alteracoes** - quantidade de indices alterados *(tipo int)*
+  - **alteracoes** - quantidade de posições alteradas *(tipo int)*
 ---
 ### FLUXO DE EXECUÇÃO
 Ao executar o ponto de entrada **main** a função executa linha a linha:
