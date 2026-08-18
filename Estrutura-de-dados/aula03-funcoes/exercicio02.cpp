@@ -7,7 +7,7 @@ void main(){
 
     popularVetor(VET, N);
 
-    int valor  = buscarMaiorValor(VET, N, 10);
+    int valor  = buscarValor(VET, N, 10);
     printf("O valor encontrado foi: %.d", valor);
 
 }
@@ -23,7 +23,7 @@ void popularVetor(int V[], int N){
     
 }
 
-int buscarMaiorValor(int V[], int N, int valor){
+int buscarValor(int V[], int N, int valor){
     for (int i = 0; i < N; i++)
     {
         if(V[i] == valor) {
