@@ -16,7 +16,7 @@ void MostrarVetor(int V[], int N)
     {
         printf(", %d", V[i]);
     }
-    printf("]");1
+    printf("]");
 }
 
 int AlterarVetor(int V[], int N, int procurado, int novo)
