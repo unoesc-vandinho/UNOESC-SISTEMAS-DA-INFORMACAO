@@ -1,7 +1,31 @@
 #include <stdio.h>
 
-void main(){
-    int RES[2];
+
+void popularVetor(int V[], int N){
+    printf("Definindo os valores do Vetor\n");
+    for (int i = 0; i < N; i++)
+    {
+        printf("Digite o proximo valor do vetor: ");
+        scanf("%d", &V[i]); // Corrigido para i
+    }
+}
+
+void buscarMaiorValor(int V[], int N, int R[]){   
+    // Inicializa o maior valor com o primeiro elemento do vetor
+    R[0] = V[0]; // R[0] guarda o maior VALOR
+    R[1] = 0;    // R[1] guarda a POSIÇÃO (índice)
+
+    for (int i = 1; i < N; i++) // Começa em 1 pois o 0 já foi testado
+    {
+        // Compara o elemento atual V[i] com o maior valor guardado R[0]
+        if(V[i] > R[0]) {
+            R[0] = V[i]; // Atualiza o maior valor encontrado
+            R[1] = i;    // Atualiza a posição dele
+        }
+    }
+}
+
+void main(){ 
     int VET[5];
     int N = 5;
 
@@ -11,28 +35,5 @@ void main(){
 
     printf("Maior valor: %d\n", RES[0]);
     printf("Posicao: %d\n", RES[1]);
-
-}
-
-void popularVetor(int V[], int N){
-    printf("Definindo os valores do Vetor\n");
-
-    for (int i = 0; i < N; i++)
-    {
-        printf("Digite o proximo valor do vetor:\b");
-        scanf("%d", &V[1]); 
-    }
-    
-}
-
-void buscarMaiorValor(int V[], int N, int R[]){   
-    for (int i = 0; i < N; i++)
-    {
-        if(V[i] >= R[1]) {
-            R[0] = i;
-            R[1] = V[1];
-        }
-
-    }
 
 }
