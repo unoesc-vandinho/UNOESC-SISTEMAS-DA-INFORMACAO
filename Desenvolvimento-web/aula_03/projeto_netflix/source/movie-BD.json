@@ -7,7 +7,7 @@
         "genero": "Drama",
         "diretor": "Frank Darabont",
         "sinopse": "Um banqueiro condenado por um crime que afirma não ter cometido passa décadas em uma prisão, onde constrói uma amizade marcante e encontra maneiras de preservar sua esperança.",
-        "img": "source/img/um-sonho-de-liberdade.jpeg",
+        "img": "source/img/um-sonho-de-liberdade.webp",
         "trailer": "6hB3S9bIaco"
     },
     {
@@ -18,7 +18,7 @@
         "genero": "Crime",
         "diretor": "Francis Ford Coppola",
         "sinopse": "O filho mais jovem de uma poderosa família criminosa é gradualmente atraído para os negócios do pai e acaba assumindo uma posição central no império familiar.",
-        "img": "source/img/o-poderoso-chefao.jpg",
+        "img": "source/img/o-poderoso-chefao.webp",
         "trailer": "sY1S34973zA"
     },
     {
@@ -29,7 +29,7 @@
         "genero": "Ação",
         "diretor": "Christopher Nolan",
         "sinopse": "Batman enfrenta um criminoso caótico que transforma Gotham em um campo de batalha e desafia os limites morais do herói e de seus aliados.",
-        "img": "source/img/o-cavaleiro-das-trevas.jpg",
+        "img": "source/img/o-cavaleiro-das-trevas.webp",
         "trailer": "EXeTwQWrcwY"
     },
     {
@@ -40,7 +40,7 @@
         "genero": "Crime",
         "diretor": "Francis Ford Coppola",
         "sinopse": "A trajetória de Vito Corleone desde sua juventude é apresentada em paralelo à expansão do poder de seu filho Michael dentro da família criminosa.",
-        "img": "source/img/o-poderoso-chefao-ii.jpg",
+        "img": "source/img/o-poderoso-chefao-ii.webp",
         "trailer": "9O1Iy9od7-A"
     },
     {
@@ -51,7 +51,7 @@
         "genero": "Drama",
         "diretor": "Steven Spielberg",
         "sinopse": "Um empresário alemão passa a usar sua influência e sua fábrica para proteger trabalhadores judeus da perseguição nazista durante a Segunda Guerra Mundial.",
-        "img": "source/img/a-lista-de-schindler.jpg",
+        "img": "source/img/a-lista-de-schindler.webp",
         "trailer": "mxphAlJID9U"
     },
     {
@@ -62,7 +62,7 @@
         "genero": "Fantasia",
         "diretor": "Peter Jackson",
         "sinopse": "Enquanto uma grande guerra decide o futuro da Terra-média, Frodo e Sam avançam em direção a Mordor para destruir o anel antes que seu poder seja recuperado.",
-        "img": "source/img/o_senhor_dos_anéis_o_retorno_do_rei.jpg",
+        "img": "source/img/o_senhor_dos_anéis_o_retorno_do_rei.webp",
         "trailer": "r5X-hFf6Bwo"
     },
     {
@@ -73,7 +73,7 @@
         "genero": "Crime",
         "diretor": "Quentin Tarantino",
         "sinopse": "As histórias de criminosos, um boxeador e dois assaltantes se entrelaçam em uma sequência não linear de violência, humor e escolhas inesperadas.",
-        "img": "source/img/pulp_fiction_tempo_de_violência.jpg",
+        "img": "source/img/pulp_fiction_tempo_de_violência.webp",
         "trailer": "s7EdQ4FqbhY"
     },
     {
@@ -84,7 +84,7 @@
         "genero": "Fantasia",
         "diretor": "Peter Jackson",
         "sinopse": "Um jovem hobbit recebe a missão de levar um poderoso anel até seu destino enquanto um grupo de companheiros tenta protegê-lo das forças que desejam recuperá-lo.",
-        "img": "source/img/o_senhor_dos_anéis_a_sociedade_do_anel.jpg",
+        "img": "source/img/o_senhor_dos_anéis_a_sociedade_do_anel.webp",
         "trailer": "V75dMMIW2B4"
     },
     {
@@ -95,7 +95,7 @@
         "genero": "Faroeste",
         "diretor": "Sergio Leone",
         "sinopse": "Três homens com interesses diferentes formam alianças instáveis enquanto procuram uma fortuna escondida durante a Guerra Civil Americana.",
-        "img": "source/img/três_homens_em_conflito.jpg",
+        "img": "source/img/três_homens_em_conflito.webp",
         "trailer": "WCN5JJY_wiA"
     },
     {
@@ -106,7 +106,7 @@
         "genero": "Drama",
         "diretor": "David Fincher",
         "sinopse": "Um homem insatisfeito com sua rotina conhece um personagem carismático que o envolve em um clube clandestino de lutas, cuja influência cresce de maneira perigosa.",
-        "img": "source/img/clube_da_luta.jpg",
+        "img": "source/img/clube_da_luta.webp",
         "trailer": "SUXWAEX2jlg"
     },
     {
@@ -128,7 +128,7 @@
         "genero": "Ficção científica",
         "diretor": "Christopher Nolan",
         "sinopse": "Um especialista em invadir sonhos recebe a tarefa de plantar uma ideia na mente de um alvo, entrando em camadas cada vez mais profundas de uma realidade construída.",
-        "img": "source/img/a_origem.jpg",
+        "img": "source/img/a_origem.webp",
         "trailer": "YoHD9XEInc0"
     },
     {
@@ -150,7 +150,7 @@
         "genero": "Ficção científica",
         "diretor": "Irvin Kershner",
         "sinopse": "A Aliança Rebelde sofre uma grande derrota enquanto Luke busca treinamento com um mestre Jedi e seus amigos são perseguidos pelas forças do Império.",
-        "img": "source/img/o_império_contra_ataca.jpg",
+        "img": "source/img/o_império_contra_ataca.webp",
         "trailer": "JNwNXF9Y6kY"
     },
     {
@@ -172,7 +172,7 @@
         "genero": "Drama",
         "diretor": "Milos Forman",
         "sinopse": "Um homem enviado a uma instituição psiquiátrica entra em conflito com a rígida administração do local e incentiva os outros pacientes a questionarem sua submissão.",
-        "img": "source/img/um_estranho_no_ninho.jpg",
+        "img": "source/img/um_estranho_no_ninho.webp",
         "trailer": "2WSyH9ZtgNM"
     },
     {
@@ -183,7 +183,7 @@
         "genero": "Ação",
         "diretor": "Akira Kurosawa",
         "sinopse": "Camponeses ameaçados por bandidos contratam um samurai experiente, que reúne outros guerreiros para preparar a defesa da aldeia.",
-        "img": "source/img/os_sete_samurais.jpg",
+        "img": "source/img/os_sete_samurais.webp",
         "trailer": "7sZ7Y5K3t4Q"
     },
     {
@@ -205,7 +205,7 @@
         "genero": "Drama",
         "diretor": "Roberto Benigni",
         "sinopse": "Um pai usa imaginação e humor para proteger o filho dos horrores de um campo de concentração durante a Segunda Guerra Mundial.",
-        "img": "source/img/a_vida_é_bela.jpg",
+        "img": "source/img/a_vida_é_bela.webp",
         "trailer": "pAYEQP8gx3w"
     },
     {
@@ -227,7 +227,7 @@
         "genero": "Suspense",
         "diretor": "Jonathan Demme",
         "sinopse": "Uma jovem agente do FBI busca a ajuda de um assassino encarcerado para compreender outro criminoso que está sequestrando e matando mulheres.",
-        "img": "source/img/o_silêncio_dos_inocentes.jpg",
+        "img": "source/img/o_silêncio_dos_inocentes.webp",
         "trailer": "ZW3A5DAt9hQ"
     },
     {
@@ -238,7 +238,7 @@
         "genero": "Ficção científica",
         "diretor": "Christopher Nolan",
         "sinopse": "Com a Terra enfrentando condições cada vez mais difíceis para a sobrevivência, astronautas atravessam um fenômeno espacial em busca de um novo lar para a humanidade.",
-        "img": "source/img/interestelar.jpg",
+        "img": "source/img/interestelar.webp",
         "trailer": "zSWdZVtXT7E"
     },
     {
@@ -249,7 +249,7 @@
         "genero": "Drama",
         "diretor": "Bong Joon Ho",
         "sinopse": "Uma família em dificuldades financeiras encontra uma maneira de se aproximar de uma família rica, mas a convivência revela conflitos e segredos escondidos.",
-        "img": "source/img/parasita.jpg",
+        "img": "source/img/parasita.webp",
         "trailer": "5xH0HfJHsaY"
     },
     {
@@ -271,7 +271,7 @@
         "genero": "Ação",
         "diretor": "Ridley Scott",
         "sinopse": "Um general romano é traído, escravizado e transformado em gladiador, passando a buscar vingança contra o homem que destruiu sua família.",
-        "img": "source/img/gladiador.jpg",
+        "img": "source/img/gladiador.webp",
         "trailer": "owK1qxDselE"
     },
     {
@@ -282,7 +282,7 @@
         "genero": "Guerra",
         "diretor": "Steven Spielberg",
         "sinopse": "Um grupo de soldados atravessa uma França devastada pela guerra para localizar um paraquedista cuja família perdeu vários filhos em combate.",
-        "img": "source/img/o_resgate_do_soldado_ryan.jpg",
+        "img": "source/img/o_resgate_do_soldado_ryan.webp",
         "trailer": "RYExcf9Iu1c"
     },
     {
@@ -293,7 +293,7 @@
         "genero": "Crime",
         "diretor": "Martin Scorsese",
         "sinopse": "Um policial infiltrado em uma organização criminosa e um criminoso infiltrado na polícia tentam descobrir a identidade um do outro antes de serem expostos.",
-        "img": "source/img/os_infiltrados.jpg",
+        "img": "source/img/os_infiltrados.webp",
         "trailer": "iojhqm0JTW4"
     },
     {
@@ -304,7 +304,7 @@
         "genero": "Drama",
         "diretor": "Damien Chazelle",
         "sinopse": "Um jovem baterista busca atingir um nível extraordinário de excelência enquanto enfrenta um professor que utiliza métodos psicológicos extremos para pressioná-lo.",
-        "img": "source/img/whiplash_em_busca_da_perfeição.jpg",
+        "img": "source/img/whiplash_em_busca_da_perfeição.webp",
         "trailer": "GS2l0k7S7gA"
     },
     {
@@ -315,7 +315,7 @@
         "genero": "Animação",
         "diretor": "Hayao Miyazaki",
         "sinopse": "Uma menina entra em um mundo habitado por espíritos e precisa encontrar coragem e inteligência para salvar os pais e retornar ao mundo humano.",
-        "img": "source/img/a_viagem_de_chihiro.jpg",
+        "img": "source/img/a_viagem_de_chihiro.webp",
         "trailer": "ByXuk9QqQkk"
     },
     {
@@ -337,7 +337,7 @@
         "genero": "Faroeste",
         "diretor": "Sergio Leone",
         "sinopse": "Uma mulher recém-chegada a uma região disputada por interesses ferroviários torna-se alvo de diferentes homens, incluindo um misterioso pistoleiro.",
-        "img": "source/img/era_uma_vez_no_oeste.jpg",
+        "img": "source/img/era_uma_vez_no_oeste.webp",
         "trailer": "Qd98L8l_NLk"
     },
     {
@@ -348,7 +348,7 @@
         "genero": "Romance",
         "diretor": "Michael Curtiz",
         "sinopse": "Um proprietário de bar em Casablanca reencontra uma antiga paixão que agora precisa fugir dos nazistas com seu marido, colocando sentimentos e deveres em conflito.",
-        "img": "source/img/casablanca.jpg",
+        "img": "source/img/casablanca.webp",
         "trailer": "PKJ2GZ-vq-U"
     },
     {
@@ -359,7 +359,7 @@
         "genero": "Terror",
         "diretor": "Alfred Hitchcock",
         "sinopse": "Uma mulher em fuga encontra abrigo em um motel isolado, onde o comportamento do proprietário e os segredos do lugar revelam uma ameaça inesperada.",
-        "img": "source/img/psicose.jpg",
+        "img": "source/img/psicose.webp",
         "trailer": "DTJQfFQH8T4"
     },
     {
@@ -370,7 +370,7 @@
         "genero": "Terror",
         "diretor": "Stanley Kubrick",
         "sinopse": "Um escritor aceita cuidar de um hotel isolado durante o inverno, mas a solidão e as forças sobrenaturais do local afetam progressivamente sua mente.",
-        "img": "source/img/o_iluminado.jpg",
+        "img": "source/img/o_iluminado.webp",
         "trailer": "5Cb3ik6zU2I"
     },
     {
@@ -392,7 +392,7 @@
         "genero": "Ficção científica",
         "diretor": "Robert Zemeckis",
         "sinopse": "Um adolescente viaja acidentalmente ao passado e precisa garantir que seus próprios pais se conheçam para impedir que sua existência seja alterada.",
-        "img": "source/img/de_volta_para_o_futuro\n.jpg",
+        "img": "source/img/de_volta_para_o_futuro.webp",
         "trailer": "qvsgGtivCgs"
     },
     {
@@ -403,7 +403,7 @@
         "genero": "Ação",
         "diretor": "James Cameron",
         "sinopse": "Um androide enviado do futuro precisa proteger um garoto destinado a liderar a resistência humana contra máquinas inteligentes.",
-        "img": "source/img/o_exterminador_do_futuro_2_o_julgamento_final.jpg",
+        "img": "source/img/o_exterminador_do_futuro_2_o_julgamento_final.webp",
         "trailer": "CRRlbW6n2pM"
     },
     {
@@ -414,7 +414,7 @@
         "genero": "Aventura",
         "diretor": "Steven Spielberg",
         "sinopse": "O arqueólogo Indiana Jones corre contra agentes nazistas para encontrar uma relíquia religiosa que pode possuir um poder extraordinário.",
-        "img": "source/img/os_caçadores_da_arca_perdida.jpg",
+        "img": "source/img/os_caçadores_da_arca_perdida.webp",
         "trailer": "0xQSIdSRlAk"
     }
 ]
