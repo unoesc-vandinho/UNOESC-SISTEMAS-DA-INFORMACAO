@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card movie h-100 shadow-sm open-modal" data-id="${movie.id}" role="button" tabindex="0" aria-label="Abrir detalhes de ${movie.titulo}">
                     <div class="img">
-                        <img src="${movie.img || 'source/img/placeholder.png'}" alt="${movie.titulo}" class="card-img-top" style="height: 420px; object-fit: cover;">
+                        <img src="${movie.img || 'source/img/placeholder.png'}" alt="${movie.titulo}" class="card-img-top">
                     </div>
                     <div class="card-body">
                         <div class="movie-title mb-2">
