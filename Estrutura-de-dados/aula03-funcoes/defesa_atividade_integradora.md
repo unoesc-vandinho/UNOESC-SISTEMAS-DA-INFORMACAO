@@ -10,6 +10,8 @@
 Aos que forem sorteados não precisam entregar uma imagem com a explicação realizada numa folha a mão. 
 ![UML atividade integradora](./UML-atividade_integradora.jpg)
 ---
+![UML atividade integradora](./teste-de-mesa.png)
+---
 A função **Main** instaincia as variáveis:
  - **V** - vetor principal *(tipo int)*
  - **N** - tamanho do vetor *(tipo int)*
