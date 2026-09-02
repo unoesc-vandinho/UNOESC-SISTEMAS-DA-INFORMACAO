@@ -1,0 +1,282 @@
+#include <LiquidCrystal.h>
+#include <Keypad.h>
+
+const byte LINHAS = 4;
+const byte COLUNAS = 4;
+const int TOTAL_CANDIDATOS = 4;
+const int TAMANHO_MAXIMO_NOME = 20;
+const int TONE_HZ = 880;
+
+// ==========================================
+// 1. CONFIGURAÇÃO DE PINAGEM (HARDWARE)
+// ==========================================
+struct HardwarePins
+{
+  int tone;
+  struct
+  {
+    byte linhas[LINHAS];
+    byte colunas[COLUNAS];
+  } keypad;
+
+  struct
+  {
+    byte rs;
+    byte en;
+    byte d4;
+    byte d5;
+    byte d6;
+    byte d7;
+  } lcd;
+};
+
+// --- MAPA DE PINOS ARDUINO ---
+HardwarePins pins = {
+    .tone = A5,
+    .keypad = {
+        .linhas = {7, 6, 5, 4},
+        .colunas = {3, 2, 1, 0}},
+    .lcd = {.rs = 13, .en = 12, .d4 = 11, .d5 = 10, .d6 = 9, .d7 = 8}};
+
+// ==========================================
+// 2. CONFIGURAÇÕES GERAIS
+// ==========================================
+const char teclas[LINHAS][COLUNAS] = {
+    {'1', '2', '3', 'A'},
+    {'4', '5', '6', 'B'},
+    {'7', '8', '9', 'C'},
+    {'*', '0', '#', 'D'}};
+
+LiquidCrystal lcd(pins.lcd.rs, pins.lcd.en, pins.lcd.d4, pins.lcd.d5, pins.lcd.d6, pins.lcd.d7);
+
+Keypad teclado = Keypad(
+    makeKeymap(teclas),
+    pins.keypad.linhas,
+    pins.keypad.colunas,
+    LINHAS,
+    COLUNAS);
+
+// ==========================================
+// 3. URNA
+// ==========================================
+struct Candidato
+{
+  char nome[TAMANHO_MAXIMO_NOME];
+  int nVotos;
+  int codigo;
+};
+
+// 6 caracteres + 1 caractere terminador '\0' = tamanho 7
+const char SENHA_LIBERAR_NOVO_VOTO[7] = "A1B2C3";
+
+Candidato candidatos[TOTAL_CANDIDATOS] = {
+    {"Joao da Silva", 0, 6},
+    {"Maria de Oliveira", 0, 7},
+    {"Joana Batista", 0, 8},
+    {"Marcos Alves", 0, 9}};
+
+// Função para capturar uma única tecla com espera
+char capturarTecla()
+{
+  while (true)
+  {
+    char tecla = teclado.getKey();
+    if (tecla != NO_KEY)
+    {
+      return tecla;
+    }
+    delay(20);
+  }
+}
+
+// Captura até 6 dígitos da senha (confirma automaticamente ao atingir 6 dígitos ou ao apertar '#')
+void capturarSenha(char *bufferSenha, int maxLen)
+{
+  int index = 0;
+  memset(bufferSenha, 0, maxLen);
+
+  while (true)
+  {
+    char tecla = teclado.getKey();
+
+    if (tecla != NO_KEY)
+    {
+      // Se apertar '*' apaga o último caractere digitado
+      if (tecla == '*')
+      {
+        if (index > 0)
+        {
+          index--;
+          bufferSenha[index] = '\0';
+          lcd.setCursor(index, 1);
+          lcd.print(" ");
+        }
+      }
+      // Se apertar '#' confirma a digitação
+      else if (tecla == '#')
+      {
+        bufferSenha[index] = '\0';
+        return;
+      }
+      // Captura teclas normais (A, B, C, D, 0-9)
+      else if (index < maxLen - 1)
+      {
+        bufferSenha[index] = tecla;
+        lcd.setCursor(index, 1);
+        lcd.print("*");
+        index++;
+
+        // Se já digitou os 6 caracteres, encerra automaticamente
+        if (index == 6)
+        {
+          bufferSenha[index] = '\0';
+          delay(200);
+          return;
+        }
+      }
+    }
+    delay(20);
+  }
+}
+
+bool verificarSenha()
+{
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("Senha Mesario:");
+
+  char senhaDigitada[10];
+  capturarSenha(senhaDigitada, sizeof(senhaDigitada));
+
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  bool correta = (strcmp(senhaDigitada, SENHA_LIBERAR_NOVO_VOTO) == 0);
+
+  if (correta)
+  {
+    lcd.print("Voto Liberado!");
+  }
+  else
+  {
+    lcd.print("Senha Invalida!");
+  }
+  delay(1200);
+  return correta;
+}
+
+void selecioneCandidato()
+{
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("B: Votar");
+
+  while (true)
+  {
+    for (int i = 0; i < TOTAL_CANDIDATOS; i++)
+    {
+      lcd.setCursor(0, 1);
+      lcd.print("                ");
+      lcd.setCursor(0, 1);
+      lcd.print(candidatos[i].codigo);
+      lcd.print("-");
+      lcd.print(candidatos[i].nome);
+
+      // Aguarda 1s checando se o eleitor quer avançar para a votação
+      for (int j = 0; j < 20; j++)
+      {
+        char tecla = teclado.getKey();
+        if (tecla == 'B')
+        {
+          return;
+        }
+        delay(50);
+      }
+    }
+  }
+}
+
+bool votarCandidato()
+{
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("Numero Cand:");
+
+  char tecla = capturarTecla();
+  lcd.setCursor(13, 0);
+  lcd.print(tecla);
+
+  int codigoDigitado = tecla - '0';
+
+  for (int i = 0; i < TOTAL_CANDIDATOS; i++)
+  {
+    if (candidatos[i].codigo == codigoDigitado)
+    {
+      lcd.setCursor(0, 1);
+      lcd.print(candidatos[i].nome);
+      delay(1000);
+
+      candidatos[i].nVotos++;
+
+      lcd.clear();
+      lcd.setCursor(0, 0);
+      lcd.print("FIM - GRAVANDO");
+      lcd.setCursor(0, 1);
+      lcd.print("VOTO CONFIRMADO");
+      delay(1500);
+      return true;
+    }
+  }
+
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("VOTO NULO/INV.");
+  delay(1200);
+  return false;
+}
+
+void buzzer(bool vf)
+{
+  if (vf == true)
+  {
+    for (int i = 0; i < 4; i++)
+    {
+      tone(pins.tone, TONE_HZ);
+      delay(600);
+      noTone(pins.tone);
+    }
+  }
+  else
+  {
+    tone(pins.tone, TONE_HZ);
+    delay(1200);
+    noTone(pins.tone);
+  }
+}
+
+// ==========================================
+// 4. EXECUÇÃO
+// ==========================================
+void setup()
+{
+  lcd.begin(16, 2);
+  lcd.setCursor(0, 0);
+  lcd.print("Eleicoes CHASI02");
+  lcd.setCursor(0, 1);
+  lcd.print("Inicializando...");
+  delay(1500);
+}
+
+void loop()
+{
+  // 1. Solicita liberação do mesário
+  if (verificarSenha())
+  {
+    bool votoRegistrado = false;
+    while (!votoRegistrado) // 2. Processa e registra o voto
+    {
+      // 3. Exibe candidatos em loop até apertar 'B'
+      selecioneCandidato();
+      votoRegistrado = votarCandidato();
+    }
+  }
+}
