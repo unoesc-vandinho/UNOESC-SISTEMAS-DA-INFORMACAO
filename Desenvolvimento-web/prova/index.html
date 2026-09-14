@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pintinho Amarelinho | Petshop & Clínica Veterinária</title>
+  <meta name="description" content="Medicina veterinária integrativa com precisão clínica, estética animal livre de estresse e acolhimento humano em Palmeira - PR.">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Estilos Customizados da Identidade Visual -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon com a logo -->
+  <link rel="shortcut icon" href="img/favicon.jpg" type="image/jpeg">
+</head>
+<body id="inicio">
+
+  <!-- ======================================================================
+       CABEÇALHO E MENU PRINCIPAL
+       ====================================================================== -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" aria-label="Navegação Principal">
+      <div class="container">
+        <a class="navbar-brand" href="#inicio">
+          <img src="img/favicon.jpg" alt="Logo Pintinho Amarelinho" class="navbar-logo">
+          <div>
+            <span class="brand-title">Pintinho Amarelinho</span>
+            <span class="brand-subtitle">Clínica Veterinária & Spa</span>
+          </div>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao" aria-controls="menuNavegacao" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuNavegacao">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+            <li class="nav-item">
+              <a class="nav-link active" href="#inicio">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicos">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#profissionais">Profissionais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#depoimentos">Depoimentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a class="btn btn-nav-cta" href="https://wa.me/5549988951764?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20na%20Pintinho%20Amarelinho." target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-whatsapp"></i> WhatsApp
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ======================================================================
+       CARROSSEL EM DESTAQUE (COMPONENT BOOTSTRAP CAROUSEL)
+       ====================================================================== -->
+  <section class="hero-carousel">
+    <div id="carouselDestaques" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="img/fachada_WH_1600x900px.jpg" class="d-block w-100 hero-slide-bg" alt="Fachada da Clínica Pintinho Amarelinho">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-start">
+            <span class="brand-badge brand-badge-primary mb-3">Medicina Preventiva & Livre de Estresse</span>
+            <h1 class="caption-title">Cuidado clínico com precisão, serenidade e empatia</h1>
+            <p class="caption-lead">Unimos a sofisticação da melhor medicina veterinária ao carinho sincero que seu pet merece. Sem ruídos e sem estresse.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#servicos" class="btn btn-primary-custom">
+                <i class="bi bi-calendar2-check"></i> Conheça Nossos Serviços
+              </a>
+              <a href="#sobre" class="btn btn-outline-light-custom">
+                <i class="bi bi-info-circle"></i> Nossa História
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="img/nos_WH_1600x900px.jpg" class="d-block w-100 hero-slide-bg" alt="Equipe Pintinho Amarelinho em Atendimento">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-start">
+            <span class="brand-badge brand-badge-primary mb-3">Diagnóstico por Imagem</span>
+            <h2 class="caption-title">Ultrassonografia e exames ágeis em ambiente acolhedor</h2>
+            <p class="caption-lead">Equipamentos de alta resolução com laudos transparentes e a presença do tutor para tranquilizar seu melhor amigo.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="ultrassonografia.html" class="btn btn-primary-custom">
+                <i class="bi bi-activity"></i> Ver Ultrassonografia
+              </a>
+              <a href="https://wa.me/5549988951764?text=Olá!%20Gostaria%20de%20agendar%20um%20exame%20de%20ultrassom." target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom">
+                <i class="bi bi-whatsapp"></i> Agendar pelo WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="img/pet-model_WH_1600x900px.jpg" class="d-block w-100 hero-slide-bg" alt="Grooming e Spa Pet">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-start">
+            <span class="brand-badge brand-badge-primary mb-3">Estética Animal Calm & Spa</span>
+            <h2 class="caption-title">Banho e tosa silenciosos para o bem-estar do seu pet</h2>
+            <p class="caption-lead">Cosméticos veganos hipoalergênicos, secadores ultrassilenciosos e toalhas aquecidas. Uma experiência de relaxamento integral.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="estetica-calm-spa.html" class="btn btn-primary-custom">
+                <i class="bi bi-stars"></i> Conhecer o Spa
+              </a>
+              <a href="#depoimentos" class="btn btn-outline-light-custom">
+                <i class="bi bi-chat-heart"></i> Ver Depoimentos
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaques" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaques" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       FAIXA DE DESTAQUES RÁPIDOS
+       ====================================================================== -->
+  <section class="py-4 bg-white border-bottom">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-md-3 col-6">
+          <div class="d-flex flex-column align-items-center">
+            <i class="bi bi-shield-check text-warning fs-2 mb-1" style="color: var(--color-primary) !important;"></i>
+            <h6 class="fw-bold mb-1">Manejo Sem Estresse</h6>
+            <small class="text-muted">Atendimento sem estresse ou medo</small>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="d-flex flex-column align-items-center">
+            <i class="bi bi-heart-pulse text-warning fs-2 mb-1" style="color: var(--color-primary) !important;"></i>
+            <h6 class="fw-bold mb-1">Precisão Clínica</h6>
+            <small class="text-muted">Medicina integrativa baseada em evidências</small>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="d-flex flex-column align-items-center">
+            <i class="bi bi-volume-mute text-warning fs-2 mb-1" style="color: var(--color-primary) !important;"></i>
+            <h6 class="fw-bold mb-1">Spa Silencioso</h6>
+            <small class="text-muted">Secadores especiais e toalhas térmicas</small>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="d-flex flex-column align-items-center">
+            <i class="bi bi-geo-alt text-warning fs-2 mb-1" style="color: var(--color-primary) !important;"></i>
+            <h6 class="fw-bold mb-1">Palmeira - PR</h6>
+            <small class="text-muted">R. XV de Novembro, 428</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       CATÁLOGO DE SERVIÇOS (CARDS + LINKS EXCLUSIVOS + TABELA RESUMO)
+       ====================================================================== -->
+  <section id="servicos" class="py-5">
+    <div class="container py-lg-4">
+      <div class="text-center section-title-wrap">
+        <span class="brand-badge brand-badge-primary mb-2">Nosso Portfólio</span>
+        <h2 class="section-title">Catálogo de Serviços Especializados</h2>
+        <p class="section-subtitle">
+          Combinamos precisão clínica, estética minimalista e bem-estar integral em uma estrutura acolhedora e livre de ruídos institucionais.
+        </p>
+      </div>
+
+      <!-- Grid de Cards de Serviços -->
+      <div class="row g-4">
+        <!-- Serviço 1 -->
+        <div class="col-lg-4 col-md-6">
+          <article class="card-custom">
+            <div class="card-custom-img-wrap">
+              <img src="img/servico-checkup_WH_640x426px.jpg" alt="Consulta Clínica Integrativa e Check-up Preventivo" class="card-custom-img">
+              <span class="badge position-absolute top-0 end-0 m-3 py-2 px-3 fw-semibold" style="background-color: var(--color-slate); color: var(--color-primary);">
+                Clínica & Prevenção
+              </span>
+            </div>
+            <div class="card-custom-body">
+              <h3 class="card-custom-title">Consulta Clínica Integrativa & Check-up</h3>
+              <p class="card-custom-text">
+                Uma avaliação minuciosa da saúde geral do pet em consultório com iluminação suave e técnicas de manejo gentil e livre de estresse. Foco em prevenção e nutrição.
+              </p>
+              <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
+                <span class="text-muted small">Valor a partir de:</span>
+                <span class="card-custom-price">R$ 180,00</span>
+              </div>
+              <a href="consulta-clinica.html" class="btn btn-primary-custom w-100">
+                <i class="bi bi-file-earmark-text"></i> Solicitar Orçamento e Detalhes
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Serviço 2 -->
+        <div class="col-lg-4 col-md-6">
+          <article class="card-custom">
+            <div class="card-custom-img-wrap">
+              <img src="img/utrassonografia_WH_640x426px.jpg" alt="Diagnóstico por Ultrassonografia e Exames Rápidos" class="card-custom-img">
+              <span class="badge position-absolute top-0 end-0 m-3 py-2 px-3 fw-semibold" style="background-color: var(--color-slate); color: var(--color-primary);">
+                Diagnóstico Avançado
+              </span>
+            </div>
+            <div class="card-custom-body">
+              <h3 class="card-custom-title">Diagnóstico por Ultrassonografia</h3>
+              <p class="card-custom-text">
+                Investigação diagnóstica avançada realizada em ambiente tranquilo, avaliando órgãos abdominais e tecidos moles com alta resolução e apoio contínuo ao tutor.
+              </p>
+              <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
+                <span class="text-muted small">Valor a partir de:</span>
+                <span class="card-custom-price">R$ 260,00</span>
+              </div>
+              <a href="ultrassonografia.html" class="btn btn-primary-custom w-100">
+                <i class="bi bi-file-earmark-text"></i> Solicitar Orçamento e Detalhes
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Serviço 3 -->
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <article class="card-custom">
+            <div class="card-custom-img-wrap">
+              <img src="img/pet-model_WH_640x426px.jpg" alt="Estética Animal Calm & Spa" class="card-custom-img">
+              <span class="badge position-absolute top-0 end-0 m-3 py-2 px-3 fw-semibold" style="background-color: var(--color-slate); color: var(--color-primary);">
+                Petshop & Grooming
+              </span>
+            </div>
+            <div class="card-custom-body">
+              <h3 class="card-custom-title">Estética Animal Calm & Spa</h3>
+              <p class="card-custom-text">
+                Banho terapêutico e tosa de baixa estimulação sensorial. Controle acústico, cosméticos veganos e secadores silenciosos para uma experiência relaxante.
+              </p>
+              <div class="d-flex justify-content-between align-items-baseline mb-3 pt-2 border-top">
+                <span class="text-muted small">Valor a partir de:</span>
+                <span class="card-custom-price">R$ 135,00</span>
+              </div>
+              <a href="estetica-calm-spa.html" class="btn btn-primary-custom w-100">
+                <i class="bi bi-file-earmark-text"></i> Solicitar Orçamento e Detalhes
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Tabela Resumo dos Serviços (Tag Table Bootstrap) -->
+      <div class="mt-5 pt-3">
+        <h4 class="font-heading fs-3 mb-3 text-center">Quadro Comparativo de Atendimentos</h4>
+        <div class="table-responsive">
+          <table class="table table-hover table-custom align-middle">
+            <thead>
+              <tr>
+                <th scope="col"><i class="bi bi-card-checklist me-2"></i>Serviço</th>
+                <th scope="col"><i class="bi bi-clock me-2"></i>Duração Estimada</th>
+                <th scope="col"><i class="bi bi-calendar3 me-2"></i>Dias de Atendimento</th>
+                <th scope="col"><i class="bi bi-tag me-2"></i>Investimento Base</th>
+                <th scope="col" class="text-center"><i class="bi bi-arrow-right-circle me-2"></i>Ação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Consulta Clínica Integrativa & Check-up</strong></td>
+                <td>50 a 60 minutos</td>
+                <td>Segunda a Sábado</td>
+                <td><span class="fw-bold" style="color: var(--color-primary-dark);">R$ 180,00</span></td>
+                <td class="text-center">
+                  <a href="consulta-clinica.html" class="btn btn-sm btn-outline-custom">Ver Detalhes</a>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Diagnóstico por Ultrassonografia</strong></td>
+                <td>30 a 45 minutos</td>
+                <td>Segunda a Sexta</td>
+                <td><span class="fw-bold" style="color: var(--color-primary-dark);">R$ 260,00</span></td>
+                <td class="text-center">
+                  <a href="ultrassonografia.html" class="btn btn-sm btn-outline-custom">Ver Detalhes</a>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Estética Animal Calm & Spa</strong></td>
+                <td>1h30 a 2h00</td>
+                <td>Terça a Sábado</td>
+                <td><span class="fw-bold" style="color: var(--color-primary-dark);">R$ 135,00</span></td>
+                <td class="text-center">
+                  <a href="estetica-calm-spa.html" class="btn btn-sm btn-outline-custom">Ver Detalhes</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SEÇÃO EMPRESA / SOBRE NÓS (HISTÓRIA, FOTOS, MISSÃO/VISÃO/VALORES & GOOGLE MAPS)
+       ====================================================================== -->
+  <section id="sobre" class="py-5 about-section border-top border-bottom">
+    <div class="container py-lg-4">
+      <div class="text-center section-title-wrap">
+        <span class="brand-badge brand-badge-primary mb-2">Quem Somos</span>
+        <h2 class="section-title">Nossa História & Propósito</h2>
+        <p class="section-subtitle">
+          "Para quem tem cão, gato e mania de cantar no banho."
+        </p>
+      </div>
+
+      <div class="row g-5 align-items-center mb-5">
+        <div class="col-lg-6">
+          <div class="about-img-frame mb-4">
+            <img src="img/nos_WH_1600x900px.jpg" alt="Fundadores e Equipe Pintinho Amarelinho">
+            <div class="badge-float d-none d-sm-block">
+              <span class="d-block fw-bold fs-6">Esther & Bárbara</span>
+              <small class="text-white-50">Petshop e Clínica Veterinária Ltda</small>
+            </div>
+          </div>
+          <div class="mt-3">
+            <img src="img/fachada_WH_1600x900px.jpg" alt="Fachada da Clínica Pintinho Amarelinho" class="img-fluid rounded border shadow-sm w-100">
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <span class="brand-badge mb-2">A Origem de um Sonho</span>
+          <h3 class="font-heading fs-2 mb-3">O pequeno guardião de uma medicina sem ruído</h3>
+          <p class="text-muted text-justify">
+            A história da <strong>Pintinho Amarelinho</strong> não começou em uma sala de reuniões com planos de negócios ou gráficos de projeção. Começou em uma tarde chuvosa de outono, na varanda dos fundos de uma casa simples, onde dois jovens veterinários dividiam o mesmo dilema: <em>como unir o rigor inegociável da melhor medicina ao afeto puro de quem enxerga um membro da família em cada olhar peludo?</em>
+          </p>
+          <p class="text-muted text-justify">
+            Naquela tarde, uma caixa de sapatos encharcada foi deixada no portão. Dentro dela, tremendo sob folhas secas, não havia um cão de raça nem um gato exótico, mas uma criatura minúscula, frágil e incrivelmente amarela: um pequeno pintinho resgatado de um quintal vizinho após uma tempestade, com a asa ferida e a respiração curta.
+          </p>
+          <p class="text-muted text-justify">
+            Contra todas as probabilidades, eles passaram a madrugada em claro, ajustando a temperatura com lâmpadas improvisadas e dosando frações milimétricas de analgésico com reverência. Pela manhã, o pequeno paciente se ergueu sobre as patinhas e soltou um piado firme. Aquele pequeno ser ganhou o apelido óbvio e afetuoso de <strong>Pintinho Amarelinho</strong>, tornando-se o símbolo vivo de que <strong>nenhuma vida é pequena demais para a máxima dedicação da ciência</strong>.
+          </p>
+          <div class="p-3 bg-light rounded border-start border-3 border-warning mt-4">
+            <p class="mb-0 fst-italic text-dark small">
+              "A autoridade médica não precisa ser fria, e a sofisticação de verdade mora na capacidade de acolher o mais vulnerável com transparência, serenidade e amor incondicional."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Missão, Visão e Valores -->
+      <div class="row g-4 mt-2">
+        <div class="col-md-4">
+          <div class="pillar-box">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-compass fs-4" style="color: var(--color-primary-dark);"></i>
+              <h4 class="pillar-title mb-0">Missão</h4>
+            </div>
+            <p class="text-muted small mb-0">
+              Proporcionar medicina veterinária de excelência e cuidados preventivos com precisão clínica, transparência e acolhimento humano, garantindo saúde e longevidade aos animais enquanto oferecemos segurança para suas famílias.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="pillar-box">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-eye fs-4" style="color: var(--color-primary-dark);"></i>
+              <h4 class="pillar-title mb-0">Visão</h4>
+            </div>
+            <p class="text-muted small mb-0">
+              Ser a clínica veterinária de referência em sofisticação e precisão técnica, reconhecida por desmistificar o atendimento clínico com minimalismo, ética inegociável e uma relação de profunda confiança com a comunidade.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="pillar-box">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-gem fs-4" style="color: var(--color-primary-dark);"></i>
+              <h4 class="pillar-title mb-0">Valores Essenciais</h4>
+            </div>
+            <ul class="text-muted small ps-3 mb-0">
+              <li><strong>Transparência Absoluta:</strong> Clareza total em diagnósticos.</li>
+              <li><strong>Rigor Técnico:</strong> Compromisso intransigente com a ciência.</li>
+              <li><strong>Minimalismo Funcional:</strong> Eliminar ruído e estresse.</li>
+              <li><strong>Ética da Fragilidade:</strong> Toda vida merece devoção.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Endereço e Google Maps Integrado (Tag Iframe) -->
+      <div class="row g-4 align-items-center mt-5 pt-3">
+        <div class="col-lg-5">
+          <div class="card p-4 h-100 border-0 shadow-sm" style="background-color: var(--color-sand);">
+            <span class="brand-badge brand-badge-primary mb-2 align-self-start">Unidade Palmeira - PR</span>
+            <h4 class="font-heading fs-3 mb-3">Venha Nos Visitar</h4>
+            <p class="text-muted small mb-3">
+              Estamos instalados em uma estrutura tranquila, projetada com isolamento acústico e iluminação serena para que seu animal se sinta seguro desde o primeiro instante.
+            </p>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2 d-flex align-items-start gap-2">
+                <i class="bi bi-geo-alt-fill text-warning fs-5" style="color: var(--color-primary) !important;"></i>
+                <div>
+                  <strong>Endereço Físico:</strong><br>
+                  Rua XV de Novembro, nº 428<br>
+                  Centro — Palmeira / PR<br>
+                  CEP: 84130-000
+                </div>
+              </li>
+              <li class="mb-2 d-flex align-items-center gap-2">
+                <i class="bi bi-telephone-fill text-warning" style="color: var(--color-primary) !important;"></i>
+                <span><strong>Telefone:</strong> (49) 9 889517-64</span>
+              </li>
+              <li class="mb-2 d-flex align-items-center gap-2">
+                <i class="bi bi-clock-fill text-warning" style="color: var(--color-primary) !important;"></i>
+                <span><strong>Atendimento:</strong> Seg. a Sáb. das 08h às 19h</span>
+              </li>
+            </ul>
+            <a href="https://maps.app.goo.gl/3scLcHqgi5PCtsTH9" target="_blank" rel="noopener noreferrer" class="btn btn-outline-custom align-self-start">
+              <i class="bi bi-box-arrow-up-right"></i> Abrir no Google Maps App
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="map-container">
+            <!-- Iframe Oficial Integrado do Google Maps -->
+            <iframe 
+              title="Localização da Clínica Pintinho Amarelinho em Palmeira PR"
+              src="https://maps.google.com/maps?q=R.+XV+de+Novembro,+428+-+Palmeira,+PR,+84130-000&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SEÇÃO DE PROFISSIONAIS (EQUIPE MÉDICA)
+       ====================================================================== -->
+  <section id="profissionais" class="py-5">
+    <div class="container py-lg-4">
+      <div class="text-center section-title-wrap">
+        <span class="brand-badge brand-badge-primary mb-2">Corpo Clínico</span>
+        <h2 class="section-title">Nossos Médicos Veterinários</h2>
+        <p class="section-subtitle">
+          Profissionais com sólida formação técnica, pós-graduações e certificações internacionais no manejo gentil de animais.
+        </p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Profissional 01 -->
+        <div class="col-lg-6 col-md-8">
+          <div class="doctor-card">
+            <div class="row g-0">
+              <div class="col-sm-5 doctor-photo-wrap">
+                <img src="img/profissional01.jpg" alt="Dra. Clara Letícia Daniela Rodrigues" class="doctor-photo">
+              </div>
+              <div class="col-sm-7 d-flex flex-column justify-content-between p-4">
+                <div>
+                  <h3 class="doctor-name">Dra. Clara Letícia Daniela Rodrigues</h3>
+                  <div class="doctor-role">Médica Veterinária Chefe</div>
+                  <p class="text-muted small mb-3">
+                    Com mais de uma década de experiência clínica e cirúrgica, a Dra. Clara lidera a equipe médica da Pintinho Amarelinho com um perfil pautado pela precisão técnica e escuta atenta aos tutores.
+                  </p>
+                  <div class="d-flex flex-wrap gap-1 mb-3">
+                    <span class="badge bg-light text-dark border">Terapia Intensiva</span>
+                    <span class="badge bg-light text-dark border">Amigo dos Felinos</span>
+                    <span class="badge bg-light text-dark border">Certificação Manejo Gentil</span>
+                  </div>
+                </div>
+                <a href="https://wa.me/5549988951764?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Clara." target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-custom align-self-start">
+                  <i class="bi bi-calendar-event"></i> Agendar Consulta
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profissional 02 -->
+        <div class="col-lg-6 col-md-8">
+          <div class="doctor-card">
+            <div class="row g-0">
+              <div class="col-sm-5 doctor-photo-wrap">
+                <img src="img/profissional02.avif" alt="Dr. Pedro Henrique Isaac Lucca Novaes" class="doctor-photo">
+              </div>
+              <div class="col-sm-7 d-flex flex-column justify-content-between p-4">
+                <div>
+                  <h3 class="doctor-name">Dr. Pedro Henrique Isaac Lucca Novaes</h3>
+                  <div class="doctor-role">Cirurgião & Diagnóstico por Imagem</div>
+                  <p class="text-muted small mb-3">
+                    Especialista em Cirurgia de Tecidos Moles e Mestre em Ciências Veterinárias. Referência em procedimentos minimamente invasivos e ultrassonografia abdominal avançada de pequenos animais.
+                  </p>
+                  <div class="d-flex flex-wrap gap-1 mb-3">
+                    <span class="badge bg-light text-dark border">Cirurgia Tecidos Moles</span>
+                    <span class="badge bg-light text-dark border">Ultrassonografia</span>
+                    <span class="badge bg-light text-dark border">Anestesiologia</span>
+                  </div>
+                </div>
+                <a href="https://wa.me/5549988951764?text=Olá!%20Gostaria%20de%20agendar%20com%20o%20Dr.%20Pedro." target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-custom align-self-start">
+                  <i class="bi bi-calendar-event"></i> Agendar com Dr. Pedro
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SEÇÃO DE DEPOIMENTOS (PELO MENOS 5 DEPOIMENTOS COM FOTO, NOME E TEXTO)
+       ====================================================================== -->
+  <section id="depoimentos" class="py-5 bg-white border-top border-bottom">
+    <div class="container py-lg-4">
+      <div class="text-center section-title-wrap">
+        <span class="brand-badge brand-badge-primary mb-2">Voz dos Tutores</span>
+        <h2 class="section-title">Depoimentos & Casos de Cuidado</h2>
+        <p class="section-subtitle">
+          Nossos verdadeiros pacientes são os animais, mas o elo de confiança se constrói com as famílias que confiam suas vidas a nós.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Depoimento 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-card">
+            <i class="bi bi-quote testimonial-quote-icon"></i>
+            <div>
+              <div class="mb-2 text-warning">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">
+                "Sempre foi uma batalha levar o Milo ao veterinário; ele tremia só de ver a porta de vidro de outros lugares. Na Pintinho Amarelinho, o silêncio da recepção e a luz suave mudaram tudo. A Dra. Clara atendeu no chão, no ritmo dele, sem pressa. A transparência na explicação dos exames me deu uma paz que eu nunca tinha sentido antes."
+              </p>
+            </div>
+            <div class="testimonial-author border-top pt-3">
+              <img src="img/milo_WH_400x400px.jpg" alt="Mariana Albuquerque e seu cão Milo" class="testimonial-avatar">
+              <div>
+                <div class="testimonial-author-name">Mariana Albuquerque</div>
+                <div class="testimonial-author-role">Tutora do Milo (Golden Retriever)</div>
+                <small class="text-muted d-block" style="font-size: 0.75rem;">14 de março de 2026</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-card">
+            <i class="bi bi-quote testimonial-quote-icon"></i>
+            <div>
+              <div class="mb-2 text-warning">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">
+                "Precisei de um ultrassom de emergência para a Amora e temia o estresse que isso causaria nela, que é arredia com estranhos. O Dr. Pedro foi impecável: preparou o ambiente, aqueceu o gel do exame e me deixou acariciar a cabeça dela durante todo o procedimento. O diagnóstico foi direto, objetivo e sem rodeios desnecessários."
+              </p>
+            </div>
+            <div class="testimonial-author border-top pt-3">
+              <img src="img/amora_WH_400x400px.jpg" alt="Gabriel Zanin e sua gata Amora" class="testimonial-avatar">
+              <div>
+                <div class="testimonial-author-name">Gabriel Zanin</div>
+                <div class="testimonial-author-role">Tutor da Amora (Gata SRD)</div>
+                <small class="text-muted d-block" style="font-size: 0.75rem;">22 de maio de 2026</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-card">
+            <i class="bi bi-quote testimonial-quote-icon"></i>
+            <div>
+              <div class="mb-2 text-warning">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">
+                "O serviço de estética animal deles é incomparável. A Pipoca tem pânico de barulho de secador e sempre voltava estressada de petshops convencionais. No Spa da Pintinho Amarelinho, o isolamento acústico e a delicadeza no manejo fizeram ela voltar tranquila para casa, com o pelo impecável e sem cheiro forte de perfume barato."
+              </p>
+            </div>
+            <div class="testimonial-author border-top pt-3">
+              <img src="img/pipoca_WH_400x400px.jpg" alt="Camila Duarte e sua pet Pipoca" class="testimonial-avatar">
+              <div>
+                <div class="testimonial-author-name">Camila Duarte</div>
+                <div class="testimonial-author-role">Tutora da Pipoca (Spitz Alemão)</div>
+                <small class="text-muted d-block" style="font-size: 0.75rem;">08 de agosto de 2026</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-card">
+            <i class="bi bi-quote testimonial-quote-icon"></i>
+            <div>
+              <div class="mb-2 text-warning">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">
+                "O check-up preventivo anual do Bento foi um divisor de águas. Descobrimos precocemente uma leve alteração articular e pudemos ajustar a dieta e os exercícios antes de qualquer dor. O atendimento acolhedor e a pontualidade são raros de encontrar hoje em dia. Recomendo de olhos fechados!"
+              </p>
+            </div>
+            <div class="testimonial-author border-top pt-3">
+              <img src="img/cliente04_WH_400x400px.jpg" alt="Lucas Ferreira e seu cão Bento" class="testimonial-avatar">
+              <div>
+                <div class="testimonial-author-name">Lucas Ferreira</div>
+                <div class="testimonial-author-role">Tutor do Bento (Beagle)</div>
+                <small class="text-muted d-block" style="font-size: 0.75rem;">29 de agosto de 2026</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 5 -->
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <div class="testimonial-card">
+            <i class="bi bi-quote testimonial-quote-icon"></i>
+            <div>
+              <div class="mb-2 text-warning">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">
+                "A clínica tem uma energia de serenidade impressionante. Minha gata Luna odeia caixas de transporte, mas ao entrar na sala silenciosa com difusor de feromônios, ela ficou dócil. O respeito demonstrado pelos profissionais transforma uma visita clínica em um momento de pura segurança."
+              </p>
+            </div>
+            <div class="testimonial-author border-top pt-3">
+              <img src="img/cliente05_WH_400x400px.jpg" alt="Beatriz Mendes e sua gata Luna" class="testimonial-avatar">
+              <div>
+                <div class="testimonial-author-name">Beatriz Mendes</div>
+                <div class="testimonial-author-role">Tutora da Luna (Felina Persa)</div>
+                <small class="text-muted d-block" style="font-size: 0.75rem;">05 de setembro de 2026</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SEÇÃO DO BLOG & CONHECIMENTO CLÍNICO
+       ====================================================================== -->
+  <section id="blog" class="py-5">
+    <div class="container py-lg-4">
+      <div class="text-center section-title-wrap">
+        <span class="brand-badge brand-badge-primary mb-2">Conteúdo Informativo</span>
+        <h2 class="section-title">Artigos & Dicas de Saúde Animal</h2>
+        <p class="section-subtitle">
+          Informação científica, preventiva e descomplicada para o bem-estar da sua família multiespécie.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Notícia 1 -->
+        <div class="col-md-6">
+          <div class="card-custom">
+            <div class="row g-0 h-100">
+              <div class="col-sm-5">
+                <img src="img/post01.avif" alt="Nutrição canina" class="blog-card-img h-100">
+              </div>
+              <div class="col-sm-7 d-flex flex-column justify-content-between p-3 p-lg-4">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-light text-dark border">Nutrição & Geriatria</span>
+                    <small class="text-muted" style="font-size: 0.75rem;"><i class="bi bi-clock me-1"></i>26/08/2026 às 10:30</small>
+                  </div>
+                  <h3 class="card-custom-title fs-5 mb-1">Como a nutrição pode ajudar cães a envelhecer com saúde?</h3>
+                  <small class="text-primary-emphasis fw-medium d-block mb-2"><i class="bi bi-person-fill me-1"></i>Por Dra. Clara Letícia Daniela Rodrigues</small>
+                  <p class="card-custom-text small mb-2">
+                    Veja como alimentação adequada, controle do peso e preservação da massa muscular podem contribuir para uma longevidade ativa e feliz.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between pt-2 border-top">
+                  <img src="img/post01-1.avif" alt="Cão saudável" class="rounded-circle border" width="34" height="34" style="object-fit: cover;">
+                  <a href="https://caesegatos.com.br/como-a-nutricao-pode-ajudar-caes-a-envelhecer-com-saude-entenda/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-custom">
+                    Ler Artigo Completo <i class="bi bi-box-arrow-up-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notícia 2 -->
+        <div class="col-md-6">
+          <div class="card-custom">
+            <div class="row g-0 h-100">
+              <div class="col-sm-5">
+                <img src="img/post02.avif" alt="Amizade cão e humano" class="blog-card-img h-100">
+              </div>
+              <div class="col-sm-7 d-flex flex-column justify-content-between p-3 p-lg-4">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-light text-dark border">Comportamento & Vínculo</span>
+                    <small class="text-muted" style="font-size: 0.75rem;"><i class="bi bi-clock me-1"></i>04/09/2026 às 14:15</small>
+                  </div>
+                  <h3 class="card-custom-title fs-5 mb-1">Amizade que atravessa gerações: psicologia do vínculo</h3>
+                  <small class="text-primary-emphasis fw-medium d-block mb-2"><i class="bi bi-person-fill me-1"></i>Por Dr. Pedro Henrique Isaac Lucca Novaes</small>
+                  <p class="card-custom-text small mb-2">
+                    A relação entre cães e seres humanos vai muito além do afeto e envolve evolução milenar, comunicação sensível e benefícios mútuos à saúde mental.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between pt-2 border-top">
+                  <img src="img/post02.2.avif" alt="Tutor e cão" class="rounded-circle border" width="34" height="34" style="object-fit: cover;">
+                  <a href="https://caesegatos.com.br/amizade-que-atravessa-geracoes-a-historia-e-a-psicologia-por-tras-do-vinculo-entre-humanos-e-caes/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-custom">
+                    Ler Artigo Completo <i class="bi bi-box-arrow-up-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       DÚVIDAS FREQUENTES (COMPONENT ACCORDION BOOTSTRAP)
+       ====================================================================== -->
+  <section class="py-5 bg-white border-top border-bottom">
+    <div class="container py-lg-3">
+      <div class="text-center section-title-wrap mb-4">
+        <span class="brand-badge brand-badge-primary mb-2">Perguntas Frequentes</span>
+        <h2 class="section-title">Tire Suas Dúvidas Conosco</h2>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion accordion-custom" id="faqAccordion">
+            <!-- Item 1 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  O que significa o atendimento livre de medo e estresse?
+                </button>
+              </h3>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Nosso protocolo de atendimento gentil prioriza a redução sensorial de estímulos estressores. Utilizamos música ambiente em frequências calmantes, aromas e feromônios específicos para cães e gatos, toalhas aquecidas, piso antiderrapante e permitimos que o animal seja examinado na posição em que se sinta mais seguro (muitas vezes no chão ou no colo do tutor).
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  É necessário jejum prévio para ultrassonografia abdominal?
+                </button>
+              </h3>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Sim, na maioria dos exames abdominais eletivos recomenda-se jejum alimentar de 6 a 8 horas para cães e de 4 a 6 horas para felinos (água sempre à vontade), visando reduzir o gás estomacal e intestinal e proporcionar imagens nítidas. Em casos emergenciais, o exame é realizado de imediato.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Como funciona o isolamento acústico no banho e tosa?
+                </button>
+              </h3>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Nossa área de estética foi projetada com cabines de secagem acústica, motores dos sopradores instalados fora da sala de manejo e secadores manuais silenciosos. Isso reduz os decibéis pela metade, prevenindo crises de pânico em animais sensíveis.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Como solicitar um orçamento ou agendar um serviço?
+                </button>
+              </h3>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Você pode acessar qualquer página de serviço do nosso catálogo e clicar em "Solicitar Orçamento" para preencher o formulário no modal, ou entrar em contato direto pelo nosso botão de WhatsApp no canto da tela.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SEÇÃO CONTATO (FORMULÁRIO + INFORMAÇÕES DA EMPRESA + REDES SOCIAIS)
+       ====================================================================== -->
+  <section id="contato" class="py-5">
+    <div class="container py-lg-4">
+      <div class="text-center section-title-wrap">
+        <span class="brand-badge brand-badge-primary mb-2">Canais de Atendimento</span>
+        <h2 class="section-title">Fale com a Nossa Equipe</h2>
+        <p class="section-subtitle">
+          Estamos à disposição para tirar dúvidas, agendar atendimentos ou fornecer orçamentos detalhados.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Formulário de Contato -->
+        <div class="col-lg-7">
+          <div class="card p-4 p-lg-5 border-0 shadow-sm bg-white rounded-3">
+            <h3 class="font-heading fs-3 mb-3">Envie uma Mensagem</h3>
+            <form id="formContato" class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="contatoNome" class="form-label">Nome Completo *</label>
+                  <input type="text" class="form-control" id="contatoNome" placeholder="Ex: Maria da Silva" required>
+                  <div class="invalid-feedback">Por favor, informe seu nome.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="contatoEmail" class="form-label">E-mail *</label>
+                  <input type="email" class="form-control" id="contatoEmail" placeholder="exemplo@email.com" required>
+                  <div class="invalid-feedback">Por favor, informe um e-mail válido.</div>
+                </div>
+
+                <div class="col-12">
+                  <label for="contatoMensagem" class="form-label">Mensagem *</label>
+                  <textarea class="form-control" id="contatoMensagem" rows="5" placeholder="Descreva sua dúvida, necessidade ou informações sobre seu pet..." required></textarea>
+                  <div class="invalid-feedback">Por favor, digite sua mensagem.</div>
+                </div>
+
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-primary-custom w-100 py-3">
+                    <i class="bi bi-send-fill"></i> Enviar Mensagem
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Informações de Contato -->
+        <div class="col-lg-5">
+          <div class="card p-4 p-lg-5 border-0 shadow-sm text-white rounded-3 h-100" style="background-color: var(--color-slate);">
+            <h3 class="font-heading fs-3 text-white mb-4">Informações de Contato</h3>
+            
+            <div class="mb-4">
+              <span class="text-white-50 small text-uppercase fw-semibold d-block">Razão Social:</span>
+              <strong class="text-white">Esther e Bárbara petshop e clinica veterinária Ltda</strong>
+            </div>
+
+            <ul class="list-unstyled mb-4">
+              <li class="mb-3 d-flex align-items-start gap-3">
+                <i class="bi bi-geo-alt fs-5 text-warning" style="color: var(--color-primary) !important;"></i>
+                <div>
+                  <span class="text-white-50 small d-block">Endereço:</span>
+                  <span class="text-white">R. XV de Novembro, 428 — Palmeira, PR, 84130-000</span>
+                </div>
+              </li>
+              <li class="mb-3 d-flex align-items-center gap-3">
+                <i class="bi bi-telephone fs-5 text-warning" style="color: var(--color-primary) !important;"></i>
+                <div>
+                  <span class="text-white-50 small d-block">Telefone:</span>
+                  <span class="text-white">49 9 889517-64</span>
+                </div>
+              </li>
+              <li class="mb-3 d-flex align-items-center gap-3">
+                <i class="bi bi-whatsapp fs-5 text-success"></i>
+                <div>
+                  <span class="text-white-50 small d-block">WhatsApp Direto:</span>
+                  <a href="https://wa.me/5549988951764" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-white fw-bold">
+                    (49) 9 889517-64
+                  </a>
+                </div>
+              </li>
+              <li class="mb-3 d-flex align-items-center gap-3">
+                <i class="bi bi-envelope fs-5 text-warning" style="color: var(--color-primary) !important;"></i>
+                <div>
+                  <span class="text-white-50 small d-block">E-mail Oficial:</span>
+                  <span class="text-white">contato@pintinhoamarelinho.vet.br</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="pt-3 border-top border-secondary">
+              <span class="text-white-50 small d-block mb-2">Redes Sociais:</span>
+              <div class="d-flex gap-2">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom btn-sm py-1 px-3">
+                  <i class="bi bi-instagram"></i> Instagram
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom btn-sm py-1 px-3">
+                  <i class="bi bi-facebook"></i> Facebook
+                </a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom btn-sm py-1 px-3">
+                  <i class="bi bi-youtube"></i> YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       RODAPÉ OFICIAL (DADOS DA DISCIPLINA, NOME DO ALUNO E DIREITOS)
+       ====================================================================== -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <img src="img/favicon.jpg" alt="Logo" class="rounded-circle border" width="36" height="36">
+            <span class="footer-brand-title fs-4">Pintinho Amarelinho</span>
+          </div>
+          <div class="footer-subtitle">Esther e Bárbara petshop e clinica veterinária Ltda</div>
+          <p class="text-white-50 small">
+            "Para quem tem cão, gato e mania de cantar no banho." Medicina veterinária integrativa, diagnósticos precisos e estética sensorial em Palmeira - PR.
+          </p>
+          <div class="academic-badge mt-2">
+            <i class="bi bi-mortarboard-fill me-1"></i> Desenvolvido por: <strong>Vandoir Gerhard</strong>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Navegação</h5>
+          <ul class="footer-links">
+            <li><a href="#inicio"><i class="bi bi-chevron-right"></i> Início</a></li>
+            <li><a href="#sobre"><i class="bi bi-chevron-right"></i> Sobre Nós</a></li>
+            <li><a href="#servicos"><i class="bi bi-chevron-right"></i> Serviços</a></li>
+            <li><a href="#profissionais"><i class="bi bi-chevron-right"></i> Profissionais</a></li>
+            <li><a href="#depoimentos"><i class="bi bi-chevron-right"></i> Depoimentos</a></li>
+            <li><a href="#blog"><i class="bi bi-chevron-right"></i> Blog</a></li>
+            <li><a href="#contato"><i class="bi bi-chevron-right"></i> Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-heading">Serviços Exclusivos</h5>
+          <ul class="footer-links">
+            <li><a href="consulta-clinica.html"><i class="bi bi-chevron-right"></i> Consulta Integrativa</a></li>
+            <li><a href="ultrassonografia.html"><i class="bi bi-chevron-right"></i> Ultrassonografia</a></li>
+            <li><a href="estetica-calm-spa.html"><i class="bi bi-chevron-right"></i> Estética Calm & Spa</a></li>
+            <li><a href="https://wa.me/5549988951764" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> Fale no WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading">Dados Acadêmicos</h5>
+          <div class="p-3 rounded" style="background-color: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1);">
+            <div class="small text-white-50">Acadêmico Desenvolvedor:</div>
+            <div class="fw-bold text-white mb-2">Vandoir Gerhard</div>
+            <div class="small text-white-50">Curso & Semestre:</div>
+            <div class="text-white small mb-2">Sistemas de Informação — 2º Semestre (Noturno)</div>
+            <div class="small text-white-50">Instituição & Disciplina:</div>
+            <div class="text-white small">Unoesc — Fundamentos ao Desenvolvimento Web</div>
+            <div class="small text-white-50 mt-2">Docente: Prof. Rafaeli Pinheiro</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="small text-white-50 mb-0">
+          &copy; 2026 <strong>Pintinho Amarelinho</strong>. Todos os direitos reservados.
+        </p>
+        <p class="small text-white-50 mb-0">
+          Avaliação A1.1 Parte 2 — UNOESC Sistemas de Informação
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       BOTÃO FLUTUANTE DO WHATSAPP (LINK DIRETO COM NÚMERO)
+       ====================================================================== -->
+  <a href="https://wa.me/5549988951764?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20Pintinho%20Amarelinho." 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Iniciar conversa no WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+    <span class="whatsapp-tooltip">Fale conosco no WhatsApp</span>
+  </a>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Script Customizado -->
+  <script src="js/main.js"></script>
+</body>
+</html>

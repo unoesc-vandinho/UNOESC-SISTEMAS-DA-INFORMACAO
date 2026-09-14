@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta Clínica Integrativa & Check-up Preventivo | Pintinho Amarelinho</title>
+  <meta name="description" content="Avaliação clínica completa, preventiva e integrativa com técnicas gentis e livres de estresse para cães e gatos em Palmeira - PR.">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Estilos Customizados da Identidade Visual -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon com a logo -->
+  <link rel="shortcut icon" href="img/favicon.jpg" type="image/jpeg">
+</head>
+<body>
+
+  <!-- ======================================================================
+       CABEÇALHO E MENU PRINCIPAL COM LINK PARA VOLTAR À HOME
+       ====================================================================== -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" aria-label="Navegação do Serviço">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/favicon.jpg" alt="Logo Pintinho Amarelinho" class="navbar-logo">
+          <div>
+            <span class="brand-title">Pintinho Amarelinho</span>
+            <span class="brand-subtitle">Clínica Veterinária & Spa</span>
+          </div>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao" aria-controls="menuNavegacao" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuNavegacao">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#inicio"><i class="bi bi-arrow-left"></i> Voltar ao Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#sobre">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html#servicos">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#profissionais">Profissionais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#depoimentos">Depoimentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contato">Contato</a>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <button type="button" class="btn btn-nav-cta" data-bs-toggle="modal" data-bs-target="#modalOrcamento">
+                <i class="bi bi-clipboard-check"></i> Orçamento
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ======================================================================
+       HERO DA PÁGINA DO SERVIÇO
+       ====================================================================== -->
+  <section class="service-header-hero">
+    <div class="container">
+      <nav aria-label="breadcrumb" class="service-breadcrumb">
+        <ol class="breadcrumb mb-2">
+          <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house-door"></i> Início</a></li>
+          <li class="breadcrumb-item"><a href="index.html#servicos">Serviços</a></li>
+          <li class="breadcrumb-item active text-white" aria-current="page">Consulta Clínica Integrativa</li>
+        </ol>
+      </nav>
+
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <span class="brand-badge brand-badge-primary mb-3">Medicina Preventiva & Livre de Estresse</span>
+          <h1 class="text-white display-5 fw-bold mb-3 font-heading">Consulta Clínica Integrativa & Check-up Preventivo</h1>
+          <p class="lead text-white-50 mb-4" style="max-width: 720px;">
+            Uma avaliação minuciosa da saúde geral do pet em consultório com iluminação suave, manejo acolhedor e tempo hábil para sanar todas as dúvidas da família.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <button type="button" class="btn btn-primary-custom px-4 py-3" data-bs-toggle="modal" data-bs-target="#modalOrcamento">
+              <i class="bi bi-calculator"></i> Solicitar Orçamento
+            </button>
+            <a href="https://wa.me/5549988951764?text=Olá!%20Gostaria%20de%20agendar%20uma%20Consulta%20Clínica%20Integrativa." target="_blank" rel="noopener noreferrer" class="btn btn-outline-light-custom px-4 py-3">
+              <i class="bi bi-whatsapp"></i> Falar via WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+          <div class="d-inline-block text-start p-3 rounded" style="background-color: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);">
+            <small class="text-white-50 d-block">Investimento a partir de:</small>
+            <span class="display-6 fw-bold text-warning" style="color: var(--color-primary) !important;">R$ 180,00</span>
+            <small class="text-white-50 d-block mt-1"><i class="bi bi-clock"></i> Duração: 50 a 60 min</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       CONTEÚDO PRINCIPAL DO SERVIÇO
+       ====================================================================== -->
+  <main class="py-5">
+    <div class="container py-lg-3">
+      <div class="row g-5">
+        <!-- Coluna de Detalhes do Serviço -->
+        <div class="col-lg-8">
+
+          <!-- 1. Descrição Completa -->
+          <section class="mb-5">
+            <h2 class="font-heading fs-2 mb-3">Sobre o Procedimento Clínico</h2>
+            <p class="text-muted text-justify">
+              A <strong>Consulta Clínica Integrativa e Check-up Preventivo</strong> da Pintinho Amarelinho foi concebida para quebrar o ciclo de medo e ansiedade comumente associado às idas ao veterinário. Em consultórios com controle acústico, pisos atérmicos e iluminação indireta ajustável, nosso atendimento segue as diretrizes internacionais <em>Livre de Estresse</em> e <em>Prática Amiga dos Gatos</em>.
+            </p>
+            <p class="text-muted text-justify">
+              O foco primordial recai sobre a medicina preventiva: examinar o paciente em seu ritmo, sem contenções forçadas, realizar uma anamnese aprofundada dos hábitos de vida, orientar a nutrição consciente e identificar precocemente sinais sutis de disfunções renais, hepáticas, odontológicas ou articulares antes que se manifestem clinicamente.
+            </p>
+          </section>
+
+          <!-- 2. Galeria: Pelo menos duas fotos diferentes do serviço -->
+          <section class="mb-5">
+            <h3 class="font-heading fs-3 mb-3">Galeria do Atendimento</h3>
+            <p class="text-muted small mb-3">
+              Confira os registros de nossos pacientes em consultório durante a realização de consultas e avaliações preventivas:
+            </p>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="card border-0 shadow-sm overflow-hidden h-100">
+                  <img src="img/servico-checkup_WH_640x426px.jpg" alt="Consulta preventiva em consultório acolhedor" class="service-gallery-img">
+                  <div class="card-body bg-white p-3">
+                    <small class="fw-semibold text-dark d-block">Registro 01: Ambiente Clínico Livre de Estresse</small>
+                    <small class="text-muted">Manejo com luz suave, respeitando o espaço e ritmo do animal.</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card border-0 shadow-sm overflow-hidden h-100">
+                  <img src="img/milo_WH_400x400px.jpg" alt="Paciente Milo em atendimento preventivo" class="service-gallery-img">
+                  <div class="card-body bg-white p-3">
+                    <small class="fw-semibold text-dark d-block">Registro 02: Paciente Milo (Check-up Anual)</small>
+                    <small class="text-muted">Acompanhamento preventivo articular e nutricional sem estresse.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <!-- 3. Vídeo do YouTube incorporado (Tag Iframe) -->
+          <section class="mb-5">
+            <h3 class="font-heading fs-3 mb-3">Vídeo Explicativo: A Importância do Check-up Preventivo</h3>
+            <p class="text-muted small mb-3">
+              Assista abaixo a orientações veterinárias sobre como o exame clínico periódico previne alterações silenciosas e garante longevidade ao seu companheiro:
+            </p>
+            <div class="ratio ratio-16x9 video-responsive-wrap">
+              <iframe 
+                src="https://www.youtube.com/embed/k5KHS7SUWxU" 
+                title="Vídeo Explicativo: A Importância do Check-up Preventivo" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          </section>
+
+          <!-- 4. Tabela de Detalhes do Serviço (Tag Table) -->
+          <section class="mb-5">
+            <h3 class="font-heading fs-3 mb-3">Estrutura e Horários de Atendimento</h3>
+            <div class="table-responsive">
+              <table class="table table-custom align-middle">
+                <thead>
+                  <tr>
+                    <th>Item / Parâmetro</th>
+                    <th>Especificação da Clínica</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Nome do Serviço</strong></td>
+                    <td>Consulta Clínica Integrativa e Check-up Preventivo</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Preço Base</strong></td>
+                    <td><span class="fw-bold" style="color: var(--color-primary-dark);">R$ 180,00</span> (exames laboratoriais orçados à parte se necessários)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Tempo Estimado</strong></td>
+                    <td>50 a 60 minutos de dedicação exclusiva</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Dias de Atendimento</strong></td>
+                    <td>De Segunda-feira a Sábado</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Horários de Atendimento</strong></td>
+                    <td>Das 08:00 às 19:00 (mediante agendamento)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Profissional Responsável</strong></td>
+                    <td>Dra. Clara Letícia Daniela Rodrigues (CRMV Especialista em Clínica Médica)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- 5. O que está incluso (Accordion) -->
+          <section class="mb-4">
+            <h3 class="font-heading fs-3 mb-3">Perguntas e Protocolos de Consulta</h3>
+            <div class="accordion accordion-custom" id="servico1Accordion">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="headingS1One">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseS1One" aria-expanded="true" aria-controls="collapseS1One">
+                    O que está incluso na consulta clínica integrativa?
+                  </button>
+                </h4>
+                <div id="collapseS1One" class="accordion-collapse collapse show" aria-labelledby="headingS1One" data-bs-parent="#servico1Accordion">
+                  <div class="accordion-body">
+                    Avaliação física completa (ausculta cardiorrespiratória, palpação abdominal, aferição de temperatura e pressão arterial, inspeção ocular, auricular e bucal), avaliação de escore corporal e massa muscular, revisão do protocolo vacinal e vermifugação, plano alimentar individualizado e orientação comportamental.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="headingS1Two">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseS1Two" aria-expanded="false" aria-controls="collapseS1Two">
+                    Como preparar o pet antes da consulta?
+                  </button>
+                </h4>
+                <div id="collapseS1Two" class="accordion-collapse collapse" aria-labelledby="headingS1Two" data-bs-parent="#servico1Accordion">
+                  <div class="accordion-body">
+                    Para felinos, sugerimos deixar a caixa de transporte aberta em casa dias antes com coberta familiar. Para cães, um passeio calmo antes da clínica auxilia no relaxamento. Traga a carteirinha de vacinação anterior e anotações sobre os petiscos e ração consumidos atualmente.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- Coluna Lateral (Sidebar com Card de Orçamento e Contato Rápido) -->
+        <div class="col-lg-4">
+          <aside class="service-sidebar-card">
+            <span class="brand-badge brand-badge-primary mb-2">Agendamento & Orçamento</span>
+            <h3 class="font-heading fs-4 mb-2">Solicite seu Atendimento</h3>
+            <p class="text-muted small mb-4">
+              Preencha o formulário para receber uma proposta personalizada da nossa equipe.
+            </p>
+
+            <div class="p-3 mb-4 rounded" style="background-color: var(--color-sand);">
+              <div class="d-flex justify-content-between mb-2">
+                <span class="text-muted small">Valor Consulta:</span>
+                <span class="fw-bold">R$ 180,00</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span class="text-muted small">Retorno incluso:</span>
+                <span class="fw-bold text-success">Até 21 dias</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span class="text-muted small">Formato:</span>
+                <span class="fw-bold">Presencial e Acolhedor</span>
+              </div>
+            </div>
+
+            <!-- BOTÃO QUE ACIONA O MODAL -->
+            <button type="button" class="btn btn-primary-custom w-100 py-3 mb-3" data-bs-toggle="modal" data-bs-target="#modalOrcamento">
+              <i class="bi bi-file-earmark-spreadsheet me-1"></i> Abrir Modal de Orçamento
+            </button>
+
+            <a href="https://wa.me/5549988951764?text=Olá!%20Quero%20agendar%20uma%20consulta%20preventiva%20na%20Pintinho%20Amarelinho." target="_blank" rel="noopener noreferrer" class="btn btn-outline-custom w-100 py-2 mb-4">
+              <i class="bi bi-whatsapp"></i> Conversar no WhatsApp
+            </a>
+
+            <div class="border-top pt-3">
+              <small class="fw-bold text-dark d-block mb-1">Localização da Clínica:</small>
+              <small class="text-muted d-block">R. XV de Novembro, 428 — Palmeira, PR</small>
+              <small class="text-muted d-block">Telefone: 49 9 889517-64</small>
+            </div>
+
+            <div class="mt-4 pt-3 border-top text-center">
+              <a href="index.html" class="text-decoration-none text-muted small">
+                <i class="bi bi-arrow-left"></i> Voltar para a Página Principal
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ======================================================================
+       MODAL DE ORÇAMENTO COM AUTOCOMPLETAR DE CEP VIA BRASILAPI
+       ====================================================================== -->
+  <div class="modal fade modal-custom" id="modalOrcamento" tabindex="-1" aria-labelledby="modalOrcamentoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h3 class="modal-title fs-5 mb-0" id="modalOrcamentoLabel">Solicitação de Orçamento</h3>
+            <small class="text-white-50" id="orcamentoServicoNome">Consulta Clínica Integrativa e Check-up Preventivo</small>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+
+        <form id="formOrcamento" class="needs-validation" novalidate>
+          <div class="modal-body">
+            <div class="row g-3">
+              <!-- 1. Nome -->
+              <div class="col-md-6">
+                <label for="orcamentoNome" class="form-label">Nome Completo do Tutor *</label>
+                <input type="text" class="form-control" id="orcamentoNome" placeholder="Ex: Mariana Albuquerque" required>
+                <div class="invalid-feedback">Por favor, preencha seu nome.</div>
+              </div>
+
+              <!-- 2. E-mail -->
+              <div class="col-md-6">
+                <label for="orcamentoEmail" class="form-label">E-mail de Contato *</label>
+                <input type="email" class="form-control" id="orcamentoEmail" placeholder="mariana@exemplo.com" required>
+                <div class="invalid-feedback">Por favor, informe um e-mail válido.</div>
+              </div>
+
+              <!-- 3. Telefone -->
+              <div class="col-md-6">
+                <label for="orcamentoTelefone" class="form-label">Telefone / WhatsApp *</label>
+                <input type="tel" class="form-control" id="orcamentoTelefone" placeholder="(49) 99999-9999" required>
+                <div class="invalid-feedback">Por favor, informe seu telefone com DDD.</div>
+              </div>
+
+              <!-- 4. CEP com integração BrasilAPI -->
+              <div class="col-md-6">
+                <label for="orcamentoCep" class="form-label">
+                  CEP <small class="text-muted fw-normal">(busca automática)</small> *
+                </label>
+                <div class="input-group">
+                  <span class="input-group-text bg-white"><i class="bi bi-geo-alt"></i></span>
+                  <input type="text" class="form-control" id="orcamentoCep" placeholder="84130-000" maxlength="9" required>
+                </div>
+                <div id="cepFeedback"></div>
+                <div class="invalid-feedback">Por favor, informe o CEP.</div>
+              </div>
+
+              <!-- 5. Endereço -->
+              <div class="col-md-8">
+                <label for="orcamentoEndereco" class="form-label">Endereço (Rua e Número) *</label>
+                <input type="text" class="form-control" id="orcamentoEndereco" placeholder="Rua e número residencial" required>
+                <div class="invalid-feedback">Por favor, informe seu endereço.</div>
+              </div>
+
+              <!-- 6. Bairro -->
+              <div class="col-md-4">
+                <label for="orcamentoBairro" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="orcamentoBairro" placeholder="Centro">
+              </div>
+
+              <!-- 7. Cidade (preenchido por CEP) -->
+              <div class="col-md-8">
+                <label for="orcamentoCidade" class="form-label">Cidade *</label>
+                <input type="text" class="form-control" id="orcamentoCidade" placeholder="Ex: Palmeira" required>
+                <div class="invalid-feedback">Por favor, informe sua cidade.</div>
+              </div>
+
+              <!-- 8. UF (preenchido por CEP) -->
+              <div class="col-md-6">
+                <label for="orcamentoUF" class="form-label">UF (Estado) *</label>
+                <input type="text" class="form-control" id="orcamentoUF" placeholder="PR" maxlength="2" required>
+                <div class="invalid-feedback">Informe o estado (UF).</div>
+              </div>
+
+              <!-- 7. Data desejada para a realização do serviço (Requisito da Avaliação) -->
+              <div class="col-md-6">
+                <label for="orcamentoData" class="form-label">Data Desejada para o Atendimento *</label>
+                <input type="date" class="form-control" id="orcamentoData" required>
+                <div class="invalid-feedback">Por favor, selecione a data desejada.</div>
+              </div>
+
+
+              <!-- 9. Observações -->
+              <div class="col-12">
+                <label for="orcamentoObservacoes" class="form-label">Observações e Informações do Animal *</label>
+                <textarea class="form-control" id="orcamentoObservacoes" rows="3" placeholder="Informe o nome do pet, espécie (cão ou gato), raça, idade e quaisquer sintomas ou dúvidas..." required></textarea>
+                <div class="invalid-feedback">Por favor, informe as observações sobre o pet.</div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-light">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary-custom">
+              <i class="bi bi-send-check"></i> Enviar Solicitação de Orçamento
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       RODAPÉ OFICIAL (DADOS DA DISCIPLINA, NOME DO ALUNO E DIREITOS)
+       ====================================================================== -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <img src="img/favicon.jpg" alt="Logo" class="rounded-circle border" width="36" height="36">
+            <span class="footer-brand-title fs-4">Pintinho Amarelinho</span>
+          </div>
+          <div class="footer-subtitle">Esther e Bárbara petshop e clinica veterinária Ltda</div>
+          <p class="text-white-50 small">
+            "Para quem tem cão, gato e mania de cantar no banho." Medicina veterinária integrativa, diagnósticos precisos e estética sensorial em Palmeira - PR.
+          </p>
+          <div class="academic-badge mt-2">
+            <i class="bi bi-mortarboard-fill me-1"></i> Desenvolvido por: <strong>Vandoir Gerhard</strong>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Navegação</h5>
+          <ul class="footer-links">
+            <li><a href="index.html#inicio"><i class="bi bi-chevron-right"></i> Início</a></li>
+            <li><a href="index.html#sobre"><i class="bi bi-chevron-right"></i> Sobre Nós</a></li>
+            <li><a href="index.html#servicos"><i class="bi bi-chevron-right"></i> Serviços</a></li>
+            <li><a href="index.html#profissionais"><i class="bi bi-chevron-right"></i> Profissionais</a></li>
+            <li><a href="index.html#depoimentos"><i class="bi bi-chevron-right"></i> Depoimentos</a></li>
+            <li><a href="index.html#contato"><i class="bi bi-chevron-right"></i> Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-heading">Outros Serviços</h5>
+          <ul class="footer-links">
+            <li><a href="ultrassonografia.html"><i class="bi bi-chevron-right"></i> Ultrassonografia</a></li>
+            <li><a href="estetica-calm-spa.html"><i class="bi bi-chevron-right"></i> Estética Calm & Spa</a></li>
+            <li><a href="https://wa.me/5549988951764" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> Fale no WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading">Dados Acadêmicos</h5>
+          <div class="p-3 rounded" style="background-color: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1);">
+            <div class="small text-white-50">Acadêmico Desenvolvedor:</div>
+            <div class="fw-bold text-white mb-2">Vandoir Gerhard</div>
+            <div class="small text-white-50">Curso & Semestre:</div>
+            <div class="text-white small mb-2">Sistemas de Informação — 2º Semestre (Noturno)</div>
+            <div class="small text-white-50">Instituição & Disciplina:</div>
+            <div class="text-white small">Unoesc — Fundamentos ao Desenvolvimento Web</div>
+            <div class="small text-white-50 mt-2">Docente: Prof. Rafaeli Pinheiro</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="small text-white-50 mb-0">
+          &copy; 2026 <strong>Pintinho Amarelinho</strong>. Todos os direitos reservados.
+        </p>
+        <p class="small text-white-50 mb-0">
+          Avaliação A1.1 Parte 2 — UNOESC Sistemas de Informação
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       BOTÃO FLUTUANTE DO WHATSAPP (LINK DIRETO COM NÚMERO)
+       ====================================================================== -->
+  <a href="https://wa.me/5549988951764?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20a%20Consulta%20Clínica." 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Iniciar conversa no WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+    <span class="whatsapp-tooltip">Fale conosco no WhatsApp</span>
+  </a>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Script Customizado -->
+  <script src="js/main.js"></script>
+</body>
+</html>
