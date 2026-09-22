@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/* ========================================================
+ALUNOS SISTEMAS DA INFORMÇÃO UNOESC - Chapecó
+Saulo, Vandoir
+*=========================================================*/
+
 /* ===========================================================
  * Atividade - Pilha Sequencial (baseada em vetor)
  * Esqueleto de codigo em C++ - ClassePilha
