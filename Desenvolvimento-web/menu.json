@@ -1,0 +1,7 @@
+[
+  { "codigo": 1, "nome": "Cachorro quente", "preco": 5.50 },
+  { "codigo": 2, "nome": "Bauru simples", "preco": 6.00 },
+  { "codigo": 3, "nome": "Bauru com ovo", "preco": 6.50 },
+  { "codigo": 4, "nome": "Hamburger", "preco": 6.75 },
+  { "codigo": 5, "nome": "Cheeseburguer", "preco": 7.50 }
+]

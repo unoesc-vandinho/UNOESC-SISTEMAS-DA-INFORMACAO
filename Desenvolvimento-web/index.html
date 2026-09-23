@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FDW - Atividade 05</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+    <header>
+      <h1>Universidade do Oeste de Santa Catarina - Unoesc</h1>
+      <p>Atividade 05</p>
+      <p>Fundamentos ao Desenvolvimento Web / Sistemas de Informação / 2</p>
+      <p>Rafaeli Pinheiro</p>
+    </header>
+
+    <section id="exercicios">
+      <h2>Exercícios</h2>
+      <ol class="exercicios">
+        <li>
+          <p>Faça um algoritmo que solicite o ano de nascimento de uma pessoa, calcule e mostre quantos anos de vida
+            esta pessoa tem.</p>
+          <div>
+            <label for="year">Digite o ano em que vocẽ nasceu: </label>
+            <input type="number" name="year" id="year" onchange="calcularIdade()">
+            <p><strong>Sua idade é: </strong><span id="idade"></span></p>
+          </div>
+        </li>
+        <li>
+          <p>Leia o salário de um funcionário, se ele ganhar até um salário mínimo conceda um aumento em seu salário de
+            15%, senão o aumento deve ser de apenas 8%. Ao final mostre o novo salário do funcionário já reajustado.</p>
+          <div>
+            <label for="salario">Digite seu salário atual: </label>
+            <input type="number" name="salario" id="salario" onchange="calcularSalario()">
+            <p><strong>Seu novo salário é de: </strong><span id="novoSalario"></span></p>
+          </div>
+        </li>
+        <li>
+          <p>Solicite a idade de uma pessoa, caso ela for menor de idade mostre a seguinte mensagem "Você é menor de
+            idade", caso ela for maior de idade mostre "Você é maior de idade".</p>
+          <div>
+            <label for="idade">Digite sua idade: </label>
+            <input type="number" name="idade" onchange="maiorIdade()">
+            <p><strong id="maiorMenor"></strong></p>
+          </div>
+        </li>
+        <li>
+          <p>Calcule a média aritmética das 3 notas de um aluno e mostre, além do valor da média, uma mensagem de
+            "Aprovado", caso a média seja igual ou superior a 6, ou mensagem "Reprovado", caso contrário.</p>
+          <div>
+            <label for="nota">Digite as notas de suas avaliações: </label>
+            <input type="number" name="nota1" id="nota1" onchange="calcularNotaFinal()">
+            <input type="number" name="nota2" id="nota2" onchange="calcularNotaFinal()">
+            <input type="number" name="nota3" id="nota3" onchange="calcularNotaFinal()">
+            <p><strong>Sua nota final é: </strong><span id="media"></span></p>
+          </div>
+        </li>
+        <li>
+          <p>Escreva um algoritmo que leia o código do item pedido, a quantidade e calcule o valor a ser pago por aquele
+            lanche. Considere que a cada execução somente será calculado o valor de um lanche.</p>
+          <div>
+            <label for="quantidade">Digite a quantidade do item do pedido: </label>
+            <input type="number" name="quantidade" id="quantidade" onchange="calcularTotalPedido()">
+            <p><strong>Preço total do pedido: </strong><span id="preco"></span></p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="cardapio">
+      <h2>Cardápio da lanchonete</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Item</th>
+            <th>Preço unitário</th>
+          </tr>
+        </thead>
+        <tbody id="cardapio-tbody">
+          <!-- populado via JS a partir de menu.json -->
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>Item 5: informe o código do lanche e a quantidade para calcular o valor a pagar.</p>
+    </footer>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
