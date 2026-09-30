@@ -61,7 +61,7 @@ function calcularTotalPedido() {
   document.querySelector("#preco").textContent = mensagem;
 }
 
-function #sortearCriptografico(min, max) {
+function sortearCriptografico(min, max) {
   const range = max - min + 1;
   const buffer = new Uint32Array(1);
   window.crypto.getRandomValues(buffer);  
