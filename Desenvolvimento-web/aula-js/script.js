@@ -53,13 +53,19 @@ function calcularNotaFinal() {
 
 function calcularTotalPedido() {
   const quantidade = +document.querySelector("#quantidade").value;
-  if (quantidade < 0)
-    return window.alert("⚠️ Informe a QUANTIDADE maior que ZERO!");
-  const sortItem = Math.floor(Math.random() * MENU.length);
+  if (quantidade < 0) return window.alert("⚠️ Informe a QUANTIDADE maior que ZERO!");
+  const sortItem = sortearCriptografico(0, MENU.length);
   const item = MENU[sortItem];
   const total = (item.preco * quantidade).toFixed(2);
   const mensagem = `O Pedido de ${quantidade} ${item.nome} deu um total de: ${total}`;
   document.querySelector("#preco").textContent = mensagem;
+}
+
+function #sortearCriptografico(min, max) {
+  const range = max - min + 1;
+  const buffer = new Uint32Array(1);
+  window.crypto.getRandomValues(buffer);  
+  return min + (buffer[0] % range);
 }
 
 Object.assign(window, {
