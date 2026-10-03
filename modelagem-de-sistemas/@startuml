@@ -1,0 +1,146 @@
+@startuml
+class Pessoa {
+  -id : int
+  -nome : String
+  -data_nascimento : String
+  -telefone : String
+  -email : String
+  -enderco : String
+  -registro_federal : String
+  -registro_crm : int
+  +novo() : void
+  +deletar() : void
+  +editar() : void
+}
+class Recepcionista {
+  -pessoa_ID : int
+  -setor : int
+  +agendar_consulta() : void
+}
+class Administrador {
+  -pessoa_ID : int
+  -nivelAcesso : int
+  +novo() : void
+  +deletar() : void
+}
+class Oftometrista {
+  -pessoa_ID : int
+  +novo() : void
+  +deletar() : void
+}
+class Oftamologista {
+  -pessoa_ID : int
+  +novo() : void
+  +deletar() : void
+}
+class Paciente {
+  -pessoa_ID : int
+  +novo() : void
+  +deleta() : void
+}
+class AnalistaEstetico {
+  -pesoa_ID : int
+  +novo() : void
+  +deletar() : void
+}
+class Agendamento {
+  -id : int
+  -data_hora : int
+  -servico_ID : int
+  +reagendar() : void
+  +cancelar() : void
+  +confirmar() : void
+  +novo() : void
+}
+class Consulta {
+  -id : int
+  -tipo_consulta : int
+  -valor : int
+  -profissioal_ID : int
+  +novo() : void
+  +salvar() : void
+}
+class Historico_de_saúde {
+  -id : int
+  -alergia : boolean
+  -doencasprteExistentes : String
+  -usoOculos : boolean
+  -usaLentes : boolean
+  -medicamentos : String
+  -observacoes : int
+  +novo() : void
+  +atualizar() : void
+}
+class Protuario {
+  -id : int
+  -datadeciracao : int
+  -profissionalId : int
+  +salvar() : void
+  +novo() : void
+}
+class notificacao {
+  -id : int
+  -mensagem : String
+  -dataEnvio : int
+  -tipo : int
+  +enviar() : void
+  +nova() : void
+}
+class Diagnostico {
+  -id : int
+  -descricao : int
+  -dataSolicitacao : int
+  -dataResultado : int
+  -cid : sting
+  -resultado : sting
+  +novo() : void
+  +atualizar() : void
+  -deletar() : void
+}
+class Receita {
+  -id : int
+  -tipo : int
+  -dataEmissao : int
+  -validade : int
+  -observacao : int
+  +nova() : void
+  +atualizar() : void
+  -deletar() : void
+}
+class PedidoDeOculos {
+  -id : int
+  -dataPedido : int
+  -status : int
+  -valor : int
+  -observacoes : String
+  -tipo_armacao : int
+  -marca : int
+  -modelo : int
+  -cor : int
+  -material : int
+  +alterarModelo() : void
+  +atualizarStatus() : void
+  +cancelar() : void
+}
+Pessoa -- Administrador
+Oftamologista -- Pessoa
+Recepcionista -- Pessoa
+Oftometrista -- Pessoa
+Paciente -- Pessoa
+AnalistaEstetico -- Pessoa
+Recepcionista -- Agendamento
+Paciente -- Agendamento
+Agendamento -- Consulta
+Historico_de_saúde -- Paciente
+Protuario -- Historico_de_saúde
+notificacao -- Paciente
+Consulta -- Diagnostico
+Diagnostico -- Receita
+notificacao -- Agendamento
+notificacao -- Receita
+Consulta -- Oftamologista
+Consulta -- Oftometrista
+AnalistaEstetico -- Consulta
+Receita -- PedidoDeOculos
+Protuario -- Diagnostico
+@enduml

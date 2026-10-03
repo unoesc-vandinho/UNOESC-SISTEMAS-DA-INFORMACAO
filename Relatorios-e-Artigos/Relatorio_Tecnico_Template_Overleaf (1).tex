@@ -1,0 +1,203 @@
+% =====================================================================
+%  RELATÓRIO TÉCNICO — Projeto Prático: Sensor + Atuador com Arduino/ESP32
+%  Introdução ao Hardware · Unoesc Chapecó · Prof. Jacson Luiz Matte
+%
+%  COMO USAR NO OVERLEAF
+%  1. overleaf.com > New Project > Upload Project (envie este .tex) — ou
+%     Blank Project e cole o conteúdo em main.tex.
+%  2. Menu > Compiler: pdfLaTeX.
+%  3. Coloque as imagens (diagrama, fotos) na pasta do projeto e ajuste os \includegraphics.
+%  4. Substitua tudo que está entre << >>.
+% =====================================================================
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{float}
+
+% ---- identidade visual ----
+\definecolor{unoescazul}{HTML}{1E4679}
+\definecolor{unoescverde}{HTML}{46B652}
+\definecolor{codefundo}{HTML}{F4F6F9}
+\hypersetup{colorlinks=true, linkcolor=unoescazul, urlcolor=unoescazul, citecolor=unoescazul}
+
+% ---- estilo de código Arduino ----
+\lstdefinestyle{arduino}{
+  language=C++,
+  backgroundcolor=\color{codefundo},
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{unoescazul}\bfseries,
+  commentstyle=\color{gray}\itshape,
+  stringstyle=\color{unoescverde},
+  numbers=left, numberstyle=\tiny\color{gray}, numbersep=8pt,
+  frame=single, framerule=0pt, rulecolor=\color{codefundo},
+  breaklines=true, showstringspaces=false, tabsize=2,
+  morekeywords={pinMode,digitalWrite,digitalRead,analogRead,analogWrite,delay,millis,
+                Serial,begin,print,println,available,read,HIGH,LOW,INPUT,OUTPUT,INPUT_PULLUP,
+                setup,loop,byte,boolean,String}
+}
+\lstset{style=arduino}
+
+\begin{document}
+
+% =====================================================================
+%  CAPA
+% =====================================================================
+\begin{titlepage}
+  \centering
+  {\large\bfseries\color{unoescazul} UNIVERSIDADE DO OESTE DE SANTA CATARINA\par}
+  {\normalsize Campus Chapecó · Curso de Sistemas de Informação\par}
+  {\normalsize 25830 · Introdução ao Hardware · 2026/2\par}
+  \vspace{3cm}
+
+  {\Large\bfseries\color{unoescazul} RELATÓRIO TÉCNICO\par}
+  \vspace{0.6cm}
+  {\LARGE\bfseries <<Nome do projeto>>\par}
+  \vspace{0.4cm}
+  {\large Projeto Prático — Sensor + Atuador com Arduino/ESP32\par}
+  \vspace{0.3cm}
+  {\normalsize Atividade Avaliativa III\par}
+  \vspace{3cm}
+
+  \begin{tabular}{l}
+    <<Nome completo do integrante 1>> \\
+    <<Nome completo do integrante 2>> \\
+    <<Nome completo do integrante 3>> \\
+    <<Nome completo do integrante 4>> \\
+  \end{tabular}
+  \vspace{2cm}
+
+  {\normalsize Professor: Jacson Luiz Matte\par}
+  \vfill
+  {\normalsize Chapecó, <<mês>> de 2026\par}
+\end{titlepage}
+
+% =====================================================================
+%  RESUMO + LINKS  (fica na primeira página do conteúdo)
+% =====================================================================
+\section*{Resumo}
+<<Em até 8 linhas: qual problema o projeto resolve, quais sensores e atuadores foram usados,
+qual placa (Arduino Uno ou ESP32) e qual foi o resultado. Escreva por último, quando tudo
+estiver pronto.>>
+
+\begin{center}
+\fbox{\begin{minipage}{0.92\textwidth}
+\textbf{Vídeo demonstrativo:} \url{https://<<link-do-video>>} \\[2pt]
+\textbf{Código-fonte completo:} \url{https://<<link-do-repositorio-ou-tinkercad>>} \\[2pt]
+\textbf{Circuito no Tinkercad (se houver):} \url{https://www.tinkercad.com/things/<<id>>}
+\end{minipage}}
+\end{center}
+
+\tableofcontents
+\newpage
+
+% =====================================================================
+\section{Introdução e problema}
+<<Que situação do dia a dia o projeto ataca? Quem seria o usuário? Por que um sensor e um
+atuador resolvem isso? Termine com o objetivo do projeto em uma frase.>>
+
+\section{Pesquisa: projetos de referência}
+<<Liste de 2 a 4 projetos encontrados na internet que inspiraram o de vocês. Para cada um:
+o que ele faz, o que vocês aproveitaram e o que decidiram fazer diferente. Cite a fonte
+na seção de Referências.>>
+
+\section{Componentes utilizados}
+\begin{table}[H]
+  \centering
+  \begin{tabular}{llll}
+    \toprule
+    \textbf{Componente} & \textbf{Função no projeto} & \textbf{Pino(s)} & \textbf{Qtde} \\
+    \midrule
+    Arduino Uno / ESP32     & placa de desenvolvimento & --      & 1 \\
+    <<Sensor>>              & <<o que ele mede>>       & <<A0>>  & 1 \\
+    <<Atuador>>             & <<o que ele faz>>        & <<9>>   & 1 \\
+    <<Resistor 220 $\Omega$>> & <<limita corrente do LED>> & --  & 1 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Lista de materiais.}
+\end{table}
+
+\section{Diagrama do circuito}
+<<Insira a imagem do circuito: print do Tinkercad ou esquema desenhado. Toda ligação do
+código precisa aparecer aqui, com os pinos legíveis.>>
+
+\begin{figure}[H]
+  \centering
+  % \includegraphics[width=0.9\textwidth]{diagrama.png}
+  \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering <<diagrama.png>>}}
+  \caption{Diagrama de ligações do projeto.}
+\end{figure}
+
+\section{Funcionamento}
+<<Descreva o comportamento do sistema como uma sequência: o que o sensor lê, que decisão
+o código toma e o que o atuador faz. Um fluxograma simples ajuda muito.>>
+
+\section{Código: trechos relevantes}
+<<Não cole o código inteiro. Escolha os 2 ou 3 trechos que fazem o projeto ser o que é
+(leitura do sensor, regra de decisão, acionamento do atuador) e explique cada um em
+um parágrafo. O código completo vai no link da capa.>>
+
+\begin{lstlisting}[caption={Leitura do sensor e decisão.}]
+// <<substitua pelo seu trecho>>
+void loop() {
+  int leitura = analogRead(A0);
+  if (leitura < LIMIAR) {
+    digitalWrite(ATUADOR, HIGH);
+  } else {
+    digitalWrite(ATUADOR, LOW);
+  }
+  delay(200);
+}
+\end{lstlisting}
+
+\section{Testes e ajustes}
+<<O que foi testado, o que deu errado e como foi corrigido. Registre valores medidos
+(limiar do sensor, tempos, distâncias). Uma tabela de testes vale mais do que um parágrafo.>>
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{lll}
+    \toprule
+    \textbf{Teste} & \textbf{Esperado} & \textbf{Obtido} \\
+    \midrule
+    <<Cobrir o sensor com a mão>> & <<LED acende>> & <<OK / ajustado o limiar para 380>> \\
+    \bottomrule
+  \end{tabular}
+  \caption{Registro de testes.}
+\end{table}
+
+\section{Resultados, limitações e melhorias}
+<<O projeto cumpre o objetivo? O que ficou faltando? O que vocês fariam com mais uma semana?>>
+
+\section{Divisão de tarefas}
+\begin{table}[H]
+  \centering
+  \begin{tabular}{ll}
+    \toprule
+    \textbf{Integrante} & \textbf{Responsabilidades} \\
+    \midrule
+    <<Nome 1>> & <<pesquisa e proposta; montagem do circuito>> \\
+    <<Nome 2>> & <<código do sensor; testes>> \\
+    <<Nome 3>> & <<código do atuador; vídeo>> \\
+    <<Nome 4>> & <<relatório; apresentação>> \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+% =====================================================================
+\section*{Referências}
+\addcontentsline{toc}{section}{Referências}
+\begin{itemize}
+  \item <<AUTOR. Título do projeto de referência. Site, ano. Disponível em: url. Acesso em: data.>>
+  \item ARDUINO. Language Reference. Disponível em: \url{https://www.arduino.cc/reference}. Acesso em: <<data>>.
+  \item <<Datasheet do sensor / atuador utilizado.>>
+\end{itemize}
+
+\end{document}

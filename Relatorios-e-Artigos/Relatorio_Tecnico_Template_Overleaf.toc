@@ -1,0 +1,14 @@
+\changetocdepth {4}
+\babel@toc {brazil}{}\relax 
+\contentsline {chapter}{Sum\'ario}{2}{chapter*.2}%
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {section}{\numberline {0.1}Introdução e problema}{3}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Pesquisa: projetos de referência}{3}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Componentes utilizados}{3}{section.0.3}%
+\contentsline {section}{\numberline {0.4}Diagrama do circuito}{3}{section.0.4}%
+\contentsline {section}{\numberline {0.5}Funcionamento}{3}{section.0.5}%
+\contentsline {section}{\numberline {0.6}Código: trechos relevantes}{4}{section.0.6}%
+\contentsline {section}{\numberline {0.7}Testes e ajustes}{4}{section.0.7}%
+\contentsline {section}{\numberline {0.8}Resultados, limitações e melhorias}{4}{section.0.8}%
+\contentsline {section}{\numberline {0.9}Divisão de tarefas}{4}{section.0.9}%
+\contentsline {section}{Referências}{5}{section*.3}%
