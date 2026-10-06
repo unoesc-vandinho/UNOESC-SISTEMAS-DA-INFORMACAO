@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta ViaCEP</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container py-3 py-md-4">
+    <header class="page-header">
+      <h1 class="display-6 mb-2">
+        <i class="bi bi-geo-alt-fill me-2"></i>Consulta ViaCEP
+      </h1>
+      <p class="mb-0">
+        Busque endereços pelo CEP ou encontre CEPs a partir do nome da rua, cidade e estado.
+      </p>
+    </header>
+
+    <div class="search-panel mb-4">
+      <ul class="nav nav-tabs" id="consultaTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="tab-cep" data-bs-toggle="tab" data-bs-target="#painel-cep" type="button" role="tab">
+            <i class="bi bi-mailbox me-1"></i> Por CEP
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-rua" data-bs-toggle="tab" data-bs-target="#painel-rua" type="button" role="tab">
+            <i class="bi bi-signpost-2 me-1"></i> Por Rua
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content p-3 p-md-4">
+        <!-- Consulta por CEP -->
+        <div class="tab-pane fade show active" id="painel-cep" role="tabpanel">
+          <form id="form-cep" class="row g-3 align-items-center" novalidate>
+            <div class="col-md-6">
+              <label for="cep" class="form-label">CEP</label>
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                id="cep"
+                name="cep"
+                placeholder="00000-000"
+                maxlength="9"
+                inputmode="numeric"
+                required
+                autocomplete="postal-code"
+              >
+              <div class="form-text">Informe os 8 dígitos do CEP.</div>
+            </div>
+            <div class="col-md-auto">
+              <button type="button" class="btn btn-accent btn-lg px-4" id="btn-cep" onclick="consultarCep()">
+                <span class="btn-label"><i class="bi bi-search me-1"></i> Consultar</span>
+                <span class="btn-loading d-none">
+                  <span class="spinner-border spinner-border-sm me-1" role="status"></span>
+                  Buscando...
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Consulta por Rua -->
+        <div class="tab-pane fade" id="painel-rua" role="tabpanel">
+          <form id="form-rua" class="row g-3 align-items-end" novalidate>
+            <div class="col-sm-4 col-md-2">
+              <label for="uf" class="form-label">UF</label>
+              <select class="form-select form-select-lg" id="uf" name="uf" required>
+                <option value="">Selecione</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+              </select>
+            </div>
+            <div class="col-sm-8 col-md-4">
+              <label for="cidade" class="form-label">Cidade</label>
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                id="cidade"
+                name="cidade"
+                placeholder="Ex: São Paulo"
+                minlength="3"
+                required
+              >
+            </div>
+            <div class="col-md-4">
+              <label for="rua" class="form-label">Nome da rua</label>
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                id="rua"
+                name="rua"
+                placeholder="Ex: Avenida Paulista"
+                minlength="3"
+                required
+              >
+            </div>
+            <div class="col-md-auto">
+              <button type="button" class="btn btn-accent btn-lg px-4" id="btn-rua" onclick="consultarRua()">
+                <span class="btn-label"><i class="bi bi-search me-1"></i> Buscar</span>
+                <span class="btn-loading d-none">
+                  <span class="spinner-border spinner-border-sm me-1" role="status"></span>
+                  Buscando...
+                </span>
+              </button>
+            </div>
+            <div class="col-12">
+            <div class="form-text" id="statusReq">Cidade e rua precisam ter pelo menos 3 caracteres. Até 50 resultados.</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="alerta" class="alert d-none" role="alert"></div>
+    <div id="resultados" class="row g-3">
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
