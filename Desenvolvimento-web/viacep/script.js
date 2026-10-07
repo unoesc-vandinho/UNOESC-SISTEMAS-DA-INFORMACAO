@@ -1,7 +1,7 @@
 async function consultarCep() {
   const sppiner = document.querySelector('.btn-loading');
   const btnLLabel = document.querySelector('.btn-label');
-  const cepInput = document.querySelector('#cep').value.trim() || '';
+  const cepInput = document.querySelector('#cep').value?.replace(/\D+/g, '') || '';
   const cepFeedback = document.querySelector('#cep + div');
   try {
 
@@ -42,9 +42,9 @@ async function consultarRua() {
 
   try {
     sppiner.classList.remove('d-none');
-    const ufInput = document.querySelector('#uf').value || '';
-    const cidadeInput = document.querySelector('#cidade').value || '';
-    const partRuanInput = document.querySelector('#rua').value || '';
+    const ufInput = document.querySelector('#uf').value?.replace(/\W+/g, '') || '';
+    const cidadeInput = document.querySelector('#cidade').value?.replace(/\W+/g, '') || '';
+    const partRuanInput = document.querySelector('#rua').value?.replace(/\W+/g, '') || '';
 
     cepFeedback.textContent = 'Buscando endereço...';
     cepFeedback.className = 'text-primary small mt-1';
@@ -55,7 +55,7 @@ async function consultarRua() {
       return;
     }
 
-    const response = await fetch(`https://viacep.com.br/ws/${ufInput}/${cidadeInput}/${partRuanInput}/json/`);
+    const response = await fetch(`https://viacep.com.br/ws/${ufInput}/${cidadeInput}/${partRuanInput}/json/`.toLowerCase());
     if (!response.ok) throw new Error('CEP não localizado');
     const dataList = await response.json();
 
