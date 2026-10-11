@@ -27,14 +27,13 @@ Sempre que um Agente de IA estiver interagindo neste repositório (criando arqui
 
 ```text
 UNOESC-SISTEMAS-DA-INFORMACAO/
-├── 1-fase/                      # Disciplinas do 1º Semestre
+├── 2-fase/                      # Disciplinas da 2ª Fase
+│   ├── arquitetura-de-hardware/
+│   ├── desenvolvimento-web/
+│   ├── estrutura-de-dados/
 │   ├── introducao-ao-hardware/
 │   ├── modelagem-de-sistemas/
 │   └── pesquisa-e-normas/
-├── 2-fase/                      # Disciplinas do 2º Semestre
-│   ├── arquitetura-de-hardware/
-│   ├── desenvolvimento-web/
-│   └── estrutura-de-dados/
 ├── 3-fase/                      # (Próximos semestres conforme avanço)
 ├── _modelos-e-documentos/       # Modelos institucionais (.docx), resenhas e ABNT
 ├── .agents/                     # Regras de automação e IA
