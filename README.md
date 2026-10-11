@@ -11,7 +11,7 @@ O repositório é organizado cronologicamente por **fases acadêmicas**:
 ```text
 UNOESC-SISTEMAS-DA-INFORMACAO/
 ├── 📁 2-fase/                     # Disciplinas da 2ª Fase
-├── 📁 _modelos-e-documentos/       # Modelos ABNT, resenhas e modelos de pesquisa
+├── 📁 _modelos-e-documentos/       # Modelos ABNT, resenhas, relatórios (.md e .docx)
 ├── 📄 AGENTS.md                    # Regras de supervisão por IA e padrões de commit
 └── 📄 README.md                    # Este índice geral
 ```
