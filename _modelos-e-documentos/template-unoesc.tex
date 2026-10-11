@@ -1,0 +1,102 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{calc}
+\usepackage{etoolbox}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{amsmath,amssymb}
+
+% Compatibilidade com Pandoc 3+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\newcommand{\passthrough}[1]{#1}
+\makeatletter
+\def\pandocbounded#1{#1}
+\makeatother
+\newcounter{none}
+
+% ---- Identidade visual UNOESC ----
+\definecolor{unoescazul}{HTML}{1E4679}
+\definecolor{unoescverde}{HTML}{46B652}
+\definecolor{codefundo}{HTML}{F4F6F9}
+\hypersetup{colorlinks=true, linkcolor=unoescazul, urlcolor=unoescazul, citecolor=unoescazul}
+
+% ---- Estilo de código Arduino / C++ com suporte UTF-8 ----
+\lstdefinestyle{customcode}{
+  backgroundcolor=\color{codefundo},
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{unoescazul}\bfseries,
+  commentstyle=\color{gray}\itshape,
+  stringstyle=\color{unoescverde},
+  numbers=left, numberstyle=\tiny\color{gray}, numbersep=8pt,
+  frame=single, framerule=0pt, rulecolor=\color{codefundo},
+  breaklines=true, showstringspaces=false, tabsize=2,
+  extendedchars=true,
+  literate={á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+           {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+           {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+           {ã}{{\~a}}1 {õ}{{\~o}}1 {Ã}{{\~A}}1 {Õ}{{\~O}}1
+           {ç}{{\c{c}}}1 {Ç}{{\c{C}}}1
+}
+\lstset{style=customcode}
+
+\begin{document}
+
+% =====================================================================
+%  CAPA
+% =====================================================================
+\begin{titlepage}
+  \centering
+  {\large\bfseries\color{unoescazul} $if(institution)$$institution$$else$UNIVERSIDADE DO OESTE DE SANTA CATARINA$endif$\par}
+  {\normalsize $if(campus)$$campus$$else$Campus Chapecó · Curso de Sistemas de Informação$endif$\par}
+  {\normalsize $if(course)$$course$$else$2ª Fase · Sistemas de Informação · UNOESC$endif$\par}
+  \vspace{3cm}
+
+  {\Large\bfseries\color{unoescazul} $if(doc-type)$$doc-type$$else$RELATÓRIO TÉCNICO$endif$\par}
+  \vspace{0.6cm}
+  {\LARGE\bfseries $if(title)$$title$$else$Título do Projeto$endif$\par}
+  \vspace{0.4cm}
+  {\large $if(subtitle)$$subtitle$$else$Projeto Prático$endif$\par}
+  \vspace{0.3cm}
+  {\normalsize $if(activity)$$activity$$else$Atividade Avaliativa$endif$\par}
+  \vspace{3cm}
+
+  \begin{tabular}{l}
+  $if(author)$
+    $for(author)$
+      $author$ \\
+    $endfor$
+  $else$
+    Aluno \\
+  $endif$
+  \end{tabular}
+  \vspace{2cm}
+
+  $if(professor)$
+  {\normalsize Professor: $professor$\par}
+  $endif$
+  \vfill
+  {\normalsize $if(date)$$date$$else$Chapecó - SC, 2026$endif$\par}
+\end{titlepage}
+
+$if(toc)$
+\tableofcontents
+\newpage
+$endif$
+
+% =====================================================================
+%  CORPO DO DOCUMENTO
+% =====================================================================
+$body$
+
+\end{document}

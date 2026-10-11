@@ -1,23 +1,21 @@
-# UNIVERSIDADE DO OESTE DE SANTA CATARINA
-**Campus Chapecó · Curso de Sistemas de Informação**  
-**25830 · Introdução ao Hardware / Arquitetura de Hardware**
-
-# RELATÓRIO TÉCNICO: <<Nome do Projeto>>
-**Projeto Prático — Sensor + Atuador com Arduino/ESP32**  
-*Atividade Avaliativa*
-
-**Integrantes:**
-- <<Nome completo do integrante 1>>
-- <<Nome completo do integrante 2>>
-- <<Nome completo do integrante 3>>
-- <<Nome completo do integrante 4>>
-
-**Professor:** Jacson Luiz Matte  
-**Local e Data:** Chapecó - SC, <<Mês>> de 2026
-
+---
+title: "<<Nome do Projeto>>"
+subtitle: "Projeto Prático — Sensor + Atuador com Arduino/ESP32"
+activity: "Atividade Avaliativa III"
+institution: "UNIVERSIDADE DO OESTE DE SANTA CATARINA"
+campus: "Campus Chapecó · Curso de Sistemas de Informação"
+course: "25830 · Introdução ao Hardware / Arquitetura de Hardware"
+professor: "Jacson Luiz Matte"
+date: "Chapecó - SC, 2026"
+author:
+  - "<<Nome completo do integrante 1>>"
+  - "<<Nome completo do integrante 2>>"
+  - "<<Nome completo do integrante 3>>"
+  - "<<Nome completo do integrante 4>>"
+toc: true
 ---
 
-## Resumo
+# Resumo
 
 > <<Em até 8 linhas: qual problema o projeto resolve, quais sensores e atuadores foram usados, qual placa (Arduino Uno ou ESP32) e qual foi o resultado. Escreva por último, quando tudo estiver pronto.>>
 
@@ -25,21 +23,15 @@
 - **Código-fonte completo:** https://<<link-do-repositorio>>
 - **Circuito no Tinkercad:** https://www.tinkercad.com/things/<<id>>
 
----
-
-## 1. Introdução e Problema
+# 1. Introdução e Problema
 
 <<Que situação do dia a dia o projeto ataca? Quem seria o usuário? Por que um sensor e um atuador resolvem isso? Termine com o objetivo do projeto em uma frase clara e objetiva.>>
 
----
-
-## 2. Pesquisa: Projetos de Referência
+# 2. Pesquisa: Projetos de Referência
 
 <<Liste de 2 a 4 projetos encontrados na internet que inspiraram a solução. Para cada um: o que ele faz, o que foi aproveitado e o que decidiram fazer de forma diferente. Cite as fontes na seção de Referências.>>
 
----
-
-## 3. Componentes Utilizados
+# 3. Componentes Utilizados
 
 | Componente | Função no Projeto | Pino(s) | Qtde |
 | :--- | :--- | :---: | :---: |
@@ -48,24 +40,17 @@
 | <<Atuador (LED / Buzzer / Relé)>> | <<Ação executada>> | `9` | 1 |
 | <<Resistor 220 $\Omega$>> | <<Limita corrente>> | -- | 1 |
 
----
-
-## 4. Diagrama do Circuito
+# 4. Diagrama do Circuito
 
 <<Insira a imagem do circuito: captura do Tinkercad ou diagrama de ligações esquemático. Todas as conexões do código precisam estar visíveis e com identificação legível dos pinos.>>
 
 ![Diagrama de Ligações do Projeto](./diagrama.png)
-*Figura 1: Diagrama de ligações e pinagem do circuito.*
 
----
-
-## 5. Funcionamento do Sistema
+# 5. Funcionamento do Sistema
 
 <<Descreva o comportamento do sistema passo a passo em formato de sequência lógica: o que o sensor lê, qual decisão a lógica do código toma e qual ação o atuador executa.>>
 
----
-
-## 6. Código-Fonte: Trechos Relevantes
+# 6. Código-Fonte: Trechos Relevantes
 
 <<Destaque apenas os 2 ou 3 blocos principais de código responsáveis pela lógica central acompanhados de uma breve explicação.>>
 
@@ -84,9 +69,7 @@ void loop() {
 }
 ```
 
----
-
-## 7. Testes e Ajustes Realizados
+# 7. Testes e Ajustes Realizados
 
 <<Relate o que foi testado no protótipo, eventuais falhas encontradas e os ajustes realizados em hardware ou software (calibração de limiar, tempos).>>
 
@@ -95,15 +78,11 @@ void loop() {
 | <<Cobrir o sensor LDR>> | <<Acionar LED de alerta>> | <<OK / Calibrado limiar para 380>> |
 | <<Remover obstáculo>> | <<Desligar LED>> | <<OK>> |
 
----
-
-## 8. Resultados, Limitações e Melhorias Futuras
+# 8. Resultados, Limitações e Melhorias Futuras
 
 <<O projeto cumpriu todos os objetivos propostos? Quais limitações técnicas foram identificadas? O que a equipe implementaria em uma próxima versão?>>
 
----
-
-## 9. Divisão de Responsabilidades
+# 9. Divisão de Responsabilidades
 
 | Integrante | Responsabilidades no Projeto |
 | :--- | :--- |
@@ -112,9 +91,7 @@ void loop() {
 | <<Nome do Integrante 3>> | <<Programação dos atuadores, gravação e edição do vídeo>> |
 | <<Nome do Integrante 4>> | <<Elaboração do relatório técnico e apresentação final>> |
 
----
-
-## 10. Referências
+# 10. Referências
 
 1. <<AUTOR. **Título do projeto de referência**. Nome do Site, ano. Disponível em: <URL>. Acesso em: dd mmm. aaaa.>>
 2. ARDUINO. **Language Reference**. Disponível em: <https://www.arduino.cc/reference>. Acesso em: 10 out. 2026.
