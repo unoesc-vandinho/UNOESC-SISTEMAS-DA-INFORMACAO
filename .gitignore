@@ -136,3 +136,13 @@ coverage/
 .env.production.local
 *.env.backup
 
+# ==========================================
+# Documentos e Arquivos Temporários Office
+# ==========================================
+~$*
+~*.doc*
+~*.xls*
+~*.ppt*
+*.tmp
+.~lock.*#
+
