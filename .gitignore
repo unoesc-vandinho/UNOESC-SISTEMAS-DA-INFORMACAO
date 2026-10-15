@@ -138,7 +138,7 @@ coverage/
 *.env.backup
 
 # ==========================================
-# Documentos e Arquivos Temporários Office
+# Documentos e Arquivos Temporários Office / LaTeX
 # ==========================================
 ~$*
 ~*.doc*
@@ -146,4 +146,19 @@ coverage/
 ~*.ppt*
 *.tmp
 .~lock.*#
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.lock
 
