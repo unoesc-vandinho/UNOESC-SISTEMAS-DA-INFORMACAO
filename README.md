@@ -24,7 +24,7 @@ UNOESC-SISTEMAS-DA-INFORMACAO/
 | :--- | :--- | :--- |
 | [**Arquitetura de Hardware**](./2-fase/arquitetura-de-hardware/) | Circuitos digitais e arquitetura de processadores | Portas lógicas, circuitos e [Trabalho da Urna Eletrônica](./2-fase/arquitetura-de-hardware/trabalho-urna/) |
 | [**Desenvolvimento Web**](./2-fase/desenvolvimento-web/) | Front-end moderno e integração de APIs | HTML5, CSS3, JavaScript, consumo de APIs REST |
-| [**Estrutura de Dados**](./2-fase/estrutura-de-dados/) | Algoritmos e estruturas de dados fundamentais | C++, Python, TADs, Listas Lineares, Pilhas e Filas |
+| [**Estrutura de Dados**](./2-fase/estrutura-de-dados/) | Algoritmos e estruturas de dados fundamentais | C++, Python, TADs, Listas Lineares, Pilhas e Filas Circulares |
 | [**Introdução ao Hardware**](./2-fase/introducao-ao-hardware/) | Fundamentos de computação e arquitetura básica | Componentes de hardware, memórias e periféricos |
 | [**Modelagem de Sistemas**](./2-fase/modelagem-de-sistemas/) | Análise e especificação de software | Diagramas UML, casos de uso e requisitos |
 | [**Pesquisa e Normas**](./2-fase/pesquisa-e-normas/) | Metodologia científica e normas acadêmicas | Formatação ABNT, artigos e fichamentos |
