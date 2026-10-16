@@ -7,6 +7,7 @@
 - Disciplina: Estrutura de Dados
 - Professor: Prof. Dr. Thiago Zonta
 - Aluno: Vandoir, Eduardo
+- GitHub: [github.com/unoesc-vandinho](https://github.com/unoesc-vandinho/UNOESC-SISTEMAS-DA-INFORMACAO/tree/main/2-fase/estrutura-de-dados/aula-fila-circular)
 
 ## Objetivo
 
