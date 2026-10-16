@@ -1,8 +1,0 @@
-{
-  "markdown.styles": [
-    "${workspaceFolder}/_modelos-e-documentos/abnt-unoesc.css"
-  ],
-  "markdown-pdf.styles": [
-    "_modelos-e-documentos/abnt-unoesc.css"
-  ]
-}
