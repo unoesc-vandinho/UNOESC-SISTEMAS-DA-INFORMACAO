@@ -1,5 +1,5 @@
 #define TAMANHO 60
-#include "fila_simples.cpp"
+#include "fila-circular.cpp"
 
 /* ===========================================================
  * UNOESC - CHAPECÓ - 2024/1
@@ -11,7 +11,7 @@
  * Arquivo 3: Desafio Beecrowd 1110 - Jogando Cartas Fora
  * (Problema de Fila Circular)
  *
- * Importa a ClasseFila pronta de "fila_simples.cpp"
+ * Importa a ClasseFila pronta de "fila-circular.cpp"
  *
  * Regras:
  * - Monte com n cartas numeradas de 1 até n (1 <= n <= 50).

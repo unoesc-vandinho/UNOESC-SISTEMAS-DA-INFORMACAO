@@ -1,5 +1,5 @@
 #define TAMANHO 5
-#include "fila_simples.cpp"
+#include "fila-circular.cpp"
 
 /* ===========================================================
  * UNOESC - CHAPECÓ - 2024/1
@@ -9,7 +9,7 @@
  * Alunos: Vandoir, Eduardo
  *
  * Arquivo 1: Roteiro de Teste Obrigatório
- * Importa a implementação pronta de "fila_simples.cpp"
+ * Importa a implementação pronta de "fila-circular.cpp"
  * =========================================================== */
 
 int main()

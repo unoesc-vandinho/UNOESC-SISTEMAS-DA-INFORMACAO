@@ -1,7 +1,7 @@
 #define TAMANHO 60
 #define TIPO_ELEMENTO char
 #define FORMATO_ELEMENTO "%c"
-#include "fila_simples.cpp"
+#include "fila-circular.cpp"
 
 /* ===========================================================
  * UNOESC - CHAPECÓ - 2024/1
@@ -13,7 +13,7 @@
  * Arquivo 2: Desafio do Item 5 - Jogando Cartas Coloridas Fora
  * (Inspirado no problema 1110 do beecrowd e no jogo UNO)
  *
- * Importa a ClasseFila configurada com TIPO_ELEMENTO char de "fila_simples.cpp"
+ * Importa a ClasseFila configurada com TIPO_ELEMENTO char de "fila-circular.cpp"
  *
  * Regras da dinâmica:
  * - Monte inicial com n cartas (2 <= n <= 50).
@@ -137,4 +137,3 @@ int main()
 
     return 0;
 }
-
