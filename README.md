@@ -37,6 +37,7 @@ Projetos interativos da disciplina de Desenvolvimento Web hospedados via GitHub 
 
 - 🎬 [**Pirataflix (Clone Netflix)**](https://unoesc-vandinho.github.io/UNOESC-SISTEMAS-DA-INFORMACAO/2-fase/desenvolvimento-web/aula_03/projeto_netflix/)
 - 🔍 [**Consulta ViaCEP**](https://unoesc-vandinho.github.io/UNOESC-SISTEMAS-DA-INFORMACAO/2-fase/desenvolvimento-web/viacep/)
+- 🌎 [**Explorador de Localidades - IBGE (Avaliação A1.2)**](https://unoesc-vandinho.github.io/UNOESC-SISTEMAS-DA-INFORMACAO/2-fase/desenvolvimento-web/prova-api-ibge/)
 - 🍽️ [**Cardápio Dinâmico (JS & JSON)**](https://unoesc-vandinho.github.io/UNOESC-SISTEMAS-DA-INFORMACAO/2-fase/desenvolvimento-web/aula-js/)
 - 🏥 [**Portal Clínica & Spa (Avaliação)**](https://unoesc-vandinho.github.io/UNOESC-SISTEMAS-DA-INFORMACAO/2-fase/desenvolvimento-web/prova/)
 - 📄 [**Prática Aula 02**](https://unoesc-vandinho.github.io/UNOESC-SISTEMAS-DA-INFORMACAO/2-fase/desenvolvimento-web/aula_02/)
