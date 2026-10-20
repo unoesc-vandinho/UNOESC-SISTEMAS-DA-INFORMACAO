@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
+
 <body class="d-flex flex-column min-vh-100">
   <div class="container py-3 py-md-4 flex-grow-1">
     <header class="page-header">
       <h1 class="display-6 mb-2"><i class="bi bi-globe-americas me-2"></i>Explorador de Localidades</h1>
-      <p class="mb-0">Navegue pelo Brasil: escolha um estado, depois o município e veja seus distritos e dados oficiais do IBGE.</p>
+      <p class="mb-0">Navegue pelo Brasil: escolha um estado, depois o município e veja seus distritos e dados oficiais
+        do IBGE.</p>
     </header>
 
     <div id="alerta" class="alert d-none" role="alert"></div>
@@ -62,12 +65,38 @@
       <span class="ms-2">Consultando IBGE...</span>
     </div>
   </div>
-
   <footer class="site-footer text-center py-3">
-    <small>Vandoir Gerhard &mdash; Fundamentos ao Desenvolvimento Web (FDW 2026.2) &mdash; Unoesc &middot; Dados: API de Localidades do IBGE</small>
+    <small>Vandoir Gerhard &mdash; Fundamentos ao Desenvolvimento Web (FDW 2026.2) &mdash; Unoesc &middot; Dados: API de
+      Localidades do IBGE</small>
+      <button type="button" class="btn btn-sm btn-outline-light ms-2" onclick="exibirLogs()"><i class="bi bi-journal-text"></i> Exibir logs</button>
   </footer>
 
+  <div class="modal fade" id="modalLogs" tabindex="-1" aria-labelledby="modalLogsTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLogsTitle">LOGS da execução</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div id="lista-logs" class="mb-3"></div>
+          <h6 class="text-muted">JSON</h6>
+          <div id="json-viewer"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-danger me-auto" onclick="deletarTodosLogs()">
+            <i class="bi bi-trash"></i> Excluir todos
+          </button>
+          <button type="button" class="btn btn-outline-secondary" onclick="exibirLogs()">
+            <i class="bi bi-arrow-clockwise"></i> Atualizar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@textea/json-viewer@3"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
