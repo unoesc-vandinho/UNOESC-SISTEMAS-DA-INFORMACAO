@@ -23,7 +23,7 @@ UNOESC-SISTEMAS-DA-INFORMACAO/
 | Disciplina | Descrição | Principais Tópicos / Atividades |
 | :--- | :--- | :--- |
 | [**Arquitetura de Hardware**](./2-fase/arquitetura-de-hardware/) | Circuitos digitais e arquitetura de processadores | Portas lógicas, circuitos e [Trabalho da Urna Eletrônica](./2-fase/arquitetura-de-hardware/trabalho-urna/) |
-| [**Desenvolvimento Web**](./2-fase/desenvolvimento-web/) | Front-end moderno e integração de APIs | HTML5, CSS3, JavaScript, consumo de APIs REST |
+| [**Desenvolvimento Web**](./2-fase/desenvolvimento-web/) | Front-end moderno, integração de APIs e back-end básico | HTML5, CSS3, JavaScript, consumo de APIs REST, [PHP + MariaDB com Docker](./2-fase/desenvolvimento-web/aula-lamp/) |
 | [**Estrutura de Dados**](./2-fase/estrutura-de-dados/) | Algoritmos e estruturas de dados fundamentais | C++, Python, TADs, Listas Lineares, Pilhas e Filas Circulares |
 | [**Introdução ao Hardware**](./2-fase/introducao-ao-hardware/) | Fundamentos de computação e arquitetura básica | Componentes de hardware, memórias e periféricos |
 | [**Modelagem de Sistemas**](./2-fase/modelagem-de-sistemas/) | Análise e especificação de software | Diagramas UML, casos de uso e requisitos |
@@ -51,6 +51,9 @@ Projetos interativos da disciplina de Desenvolvimento Web hospedados via GitHub 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
+![MariaDB](https://img.shields.io/badge/mariadb-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 ---

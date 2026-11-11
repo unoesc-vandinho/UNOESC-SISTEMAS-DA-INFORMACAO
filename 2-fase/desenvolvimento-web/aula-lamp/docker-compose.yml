@@ -1,25 +1,41 @@
 services:
-  lamp:
-    image: mattrayner/lamp:latest
-    container_name: aula-lamp
+  web:
+    build: .
+    container_name: aula-lamp-web
     ports:
-      - "8080:8080"
       - "8081:80"
-      - "3306:3306"
-    environment:
-      MYSQL_ADMIN_PASS: admin
     volumes:
-      - ./app:/app
-      - mysql-data:/var/lib/mysql
+      - ./app:/var/www/html
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: mariadb:11
+    container_name: aula-lamp-db
+    environment:
+      MARIADB_ROOT_PASSWORD: admin
+      MARIADB_DATABASE: banco2026
+      MARIADB_USER: admin
+      MARIADB_PASSWORD: admin
+    volumes:
+      - db-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
 
   phpmyadmin:
     image: phpmyadmin:5
     container_name: aula-lamp-phpmyadmin
-    network_mode: "service:lamp"
+    ports:
+      - "8080:80"
     environment:
-      PMA_HOST: 127.0.0.1
+      PMA_HOST: db
     depends_on:
-      - lamp
+      db:
+        condition: service_healthy
 
 volumes:
-  mysql-data:
+  db-data:
