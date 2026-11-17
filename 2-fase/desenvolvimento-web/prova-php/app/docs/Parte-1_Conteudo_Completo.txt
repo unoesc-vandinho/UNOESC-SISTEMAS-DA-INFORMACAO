@@ -1,0 +1,135 @@
+UNIVERSIDADE DO OESTE DE SANTA CATARINA - UNOESC
+Avaliação A1.1 - Trabalho Parte 1: Coleta de Conteúdos e Identidade Visual
+
+DADOS DA DISCIPLINA
+Disciplina: Fundamentos ao Desenvolvimento Web
+Professor: Rafaeli Pinheiro
+Acadêmico: Vandoir Gerhard
+Curso: Sistemas de Informação (2º Semestre - Noturno)
+Temática: Serviços de Petshop e Clínica Veterinária
+
+================================================================================
+1. IDENTIFICAÇÃO DA EMPRESA E IDENTIDADE VISUAL
+================================================================================
+Razão Social: Esther e Bárbara petshop e clinica veterinária Ltda
+Nome Fantasia: Pintinho Amarelinho
+Slogan: "Para quem tem cão, gato e mania de cantar no banho."
+Cores Primárias:
+  - Mostarda Ocre: #D4A359
+  - Azul Ardósia Profundo: #1E2B37
+Cores Secundárias:
+  - Areia Suave: #F6F4EF
+  - Branco Puro: #FFFFFF
+Cor de Apoio:
+  - Verde Sálvia Pálido: #9AA899
+Tipografia:
+  - Headings (Títulos): Cormorant Garamond
+  - Body (Textos): Inter
+Logomarca: Arquivo img/logo/logo.jpeg
+
+================================================================================
+2. ENDEREÇO E CONTATOS
+================================================================================
+Endereço: Rua XV de Novembro, nº 428
+Bairro: Centro
+Cidade / UF: Palmeira - PR
+CEP: 84130-000
+Telefone / WhatsApp: (49) 9 889517-64
+E-mail Oficial: contato@pintinhoamarelinho.vet.br
+
+================================================================================
+3. SOBRE A EMPRESA
+================================================================================
+História de Fundação:
+A história da Pintinho Amarelinho não começou em uma sala de reuniões com planos
+de negócios ou gráficos de projeção. Começou em uma tarde chuvosa de outono, na
+varanda dos fundos de uma casa simples, onde dois jovens veterinários dividiam o
+mesmo dilema: como unir o rigor inegociável da melhor medicina ao afeto puro de
+quem enxerga um membro da família em cada olhar peludo.
+
+Naquela tarde, uma caixa de sapatos encharcada foi deixada no portão. Dentro dela,
+tremendo sob folhas secas, havia uma criatura minúscula e frágil: um pequeno pintinho
+resgatado de um quintal vizinho após uma tempestade, com a asa ferida e a respiração curta.
+Eles passaram a madrugada em claro cuidando daquela vida com a máxima dedicação da ciência.
+Pela manhã, o pequeno paciente se ergueu sobre as patinhas e soltou um piado firme.
+Aquele ser ganhou o apelido carinhoso de Pintinho Amarelinho, tornando-se o símbolo
+do propósito da clínica: nenhuma vida é pequena demais para a máxima dedicação médica.
+
+Missão:
+Proporcionar medicina veterinária de excelência e cuidados preventivos com precisão
+clínica, transparência e acolhimento humano, garantindo saúde e longevidade aos animais.
+
+Visão:
+Ser a clínica veterinária de referência em sofisticação e precisão técnica, reconhecida
+por desmistificar o atendimento clínico com ética inegociável e acolhimento.
+
+Valores:
+- Transparência Absoluta
+- Rigor Técnico e Ciência
+- Minimalismo Funcional (sem ruídos ou estresse)
+- Acolhimento Sensível
+- Ética da Fragilidade
+
+================================================================================
+4. PROFISSIONAIS
+================================================================================
+O corpo clínico conta com profissionais especializados com atendimento gentil:
+
+1. Dra. Clara Letícia Daniela Rodrigues
+   Cargo: Médica Veterinária Chefe e Especialista em Clínica Médica e Cuidados Intensivos
+   Experiência: Mais de 10 anos de experiência clínica, pós-graduação em UTI Veterinária
+   e certificação em medicina felina e manejo gentil sem estresse.
+   Foto: img/profissionais/profissional01.jpg
+
+2. Dr. Pedro Henrique Isaac Lucca Novaes
+   Cargo: Médico Veterinário Cirurgião e Especialista em Diagnóstico por Imagem
+   Experiência: Especialista em Cirurgia de Tecidos Moles, Mestre em Ciências Veterinárias,
+   certificações avançadas em ultrassonografia abdominal e anestesiologia multimodal.
+   Foto: img/profissionais/profissional02.avif
+
+================================================================================
+5. SERVIÇOS
+================================================================================
+1. Consulta Clínica Integrativa & Check-up Preventivo
+   Descrição: Avaliação física minuciosa em consultório com iluminação suave, ajuste
+   nutricional e imunização consciente.
+   Valor base: R$ 180,00
+   Imagens: img/servicos/servico-checkup.webp e img/clientes/milo.avif
+
+2. Diagnóstico por Ultrassonografia & Exames Rápidos
+   Descrição: Avaliação ultrassonográfica avançada de órgãos abdominais com aparelhos
+   de alta resolução, gel aquecido e presença contínua do tutor sem necessidade de sedação.
+   Valor base: R$ 260,00
+   Imagens: img/servicos/utrassonografia.jpeg e img/clientes/amora.webp
+
+3. Estética Animal Calm & Spa (Petshop e Grooming)
+   Descrição: Banho terapêutico com toalhas aquecidas, secadores ultrassilenciosos,
+   cosméticos botânicos veganos e corte de unhas cuidadoso.
+   Valor base: R$ 135,00
+   Imagens: img/servicos/pet-model.webp e img/clientes/pipoca.jpg
+
+================================================================================
+6. CLIENTES E DEPOIMENTOS
+================================================================================
+1. Mariana Albuquerque (Tutora do cão Milo): Acompanhamento preventivo articular e spa.
+2. Gabriel Zanin (Tutor da gata Amora): Diagnóstico rápido de ultrassom sem sedação.
+3. Camila Duarte (Tutora da Spitz Pipoca): Banho silencioso que superou o trauma de secador.
+4. Lucas Ferreira (Tutor do Beagle Bento): Check-up anual com diagnóstico precoce preventivo.
+5. Beatriz Mendes (Tutora da gata Luna): Atendimento felino em ambiente sem estresse.
+
+================================================================================
+7. BLOG & PUBLICAÇÕES
+================================================================================
+Publicação 01:
+Título: Como a nutrição pode ajudar cães a envelhecer com saúde?
+Autor: Dra. Clara Letícia Daniela Rodrigues
+Data e Hora: 26/08/2026 às 10:30
+Fonte: https://caesegatos.com.br/como-a-nutricao-pode-ajudar-caes-a-envelhecer-com-saude-entenda/
+Imagem: img/blog/post01.avif
+
+Publicação 02:
+Título: Amizade que atravessa gerações: psicologia do vínculo entre humanos e cães
+Autor: Dr. Pedro Henrique Isaac Lucca Novaes
+Data e Hora: 04/09/2026 às 14:15
+Fonte: https://caesegatos.com.br/amizade-que-atravessa-geracoes-a-historia-e-a-psicologia-por-tras-do-vinculo-entre-humanos-e-caes/
+Imagem: img/blog/post02.avif

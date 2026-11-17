@@ -1,0 +1,41 @@
+services:
+  web:
+    build: .
+    container_name: aula-lamp-web
+    ports:
+      - "8081:80"
+    volumes:
+      - ./app:/var/www/html
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: mariadb:11
+    container_name: aula-lamp-db
+    environment:
+      MARIADB_ROOT_PASSWORD: admin
+      MARIADB_DATABASE: pintinho_amarelinho
+      MARIADB_USER: admin
+      MARIADB_PASSWORD: admin
+    volumes:
+      - db-data:/var/lib/mysql
+    healthcheck:
+      test: [ "CMD", "healthcheck.sh", "--connect", "--innodb_initialized" ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  phpmyadmin:
+    image: phpmyadmin:5
+    container_name: aula-lamp-phpmyadmin
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: db
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  db-data:
